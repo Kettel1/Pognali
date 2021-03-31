@@ -9,7 +9,7 @@
 </head>
 
 <body class='form__body'>
-  <header class='form-header'>
+  <header class='page-header'>
     <h1 class='visually-hidden'>Сервис Погнали!</h1>
     <a class='page-header__logo'>
       <img src='https://via.placeholder.com/100x15/' alt='logo'>
@@ -24,6 +24,33 @@
         </li>
         <li class='form-nav__item'>
           <a class='form-nav__link' href='#'>Попутчики</a>
+        </li>
+      </ul>
+
+      <button class='form-nav__login button__login'>Авторизация</button>
+
+      <p class='form-nav__about'>О сервисе направления попутчики</p>
+
+      <div class='contacts'>
+        <a class='contacts__phone' href='tel:88005558628'>8 800 555-86-28</a>
+        <a class='contacts__email' href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a>
+      </div>
+
+      <ul class='social-icons'>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/11x21/' alt='facebook'>
+          </a>
+        </li>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/23x12/' alt='vk'>
+          </a>
+        </li>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/18x18/' alt='inst'>
+          </a>
         </li>
       </ul>
     </nav>
@@ -44,7 +71,7 @@
 
       <fieldset class='user-info'>
         <legend class='user-info__title'>Тэги</legend>
-        <p class='user-info__hashtags' class=''>#бургер #бар #футбол #концерт #крафт</p>
+        <textarea class='user-info__hashtags' class=''>#бургер #бар #футбол #концерт #крафт</textarea>
       </fieldset>
 
       <fieldset class='user-info'>
@@ -77,7 +104,7 @@
 
       <div class='step-1__wrapper'>
         <h2 class='step-1__title'>Шаг 1.</h2>
-        <h2 class='step-1__title'>Даты пребывания</h2>
+        <h3 class='step-1__title'>Даты пребывания</h3>
 
         <p class='step-1__description'>Укажите предпочтительное количество попутчиков, которых
           вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
@@ -199,9 +226,10 @@
     <section class='step-3'>
       <div class="step-3__wrapper">
         <h2 class="step-3__title">Шаг 3.</h2>
-        <h2 class="step-3__title">Развлечения</h2>
+        <h3 class="step-3__title">Развлечения</h3>
 
-        <p class='step-3__description'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+        <p class='step-3__description'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной
+          форме и ставить тэги.
         </p>
 
         <div class='country'>
@@ -211,7 +239,8 @@
 
         <div class='country'>
           <h3 class='country__name country__name--сzech'>Чехия</h3>
-          <input class='country__field' type='text' value='Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.'>
+          <input class='country__field' type='text'
+            value='Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.'>
         </div>
 
         <a href='#'>Отправить</a>
@@ -224,15 +253,6 @@
 
   <footer class='page-footer'>
     <div class='page-footer__wrapper'>
-      <div>
-        <h2 class='visually-hidden'>Адрес офиса</h2>
-        <address class='page-footer__address'>
-          Ул. большая конюшенная, 19/8
-        </address>
-        <a class='page-footer__button button' href='#'>Проложить маршрут</a>
-      </div>
-
-      <div class='page-footer__background'>*Фотография карты*</div>
 
       <div class='footer-social'>
         <a class='footer-social__logo'>
