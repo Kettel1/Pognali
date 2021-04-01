@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body class='form__body'>
+  <header class='page-header'>
+    <h1 class='visually-hidden'>Сервис Погнали!</h1>
+    <a class='page-header__logo'>
+      <img src='https://via.placeholder.com/100x15/' alt='logo'>
+    </a>
+    <nav class='form-nav'>
+      <ul class='form-nav__list'>
+        <li class='form-nav__item'>
+          <a class='form-nav__link' href='#'>О сервисе</a>
+        </li>
+        <li class='form-nav__item'>
+          <a class='form-nav__link' href='#'>Направления</a>
+        </li>
+        <li class='form-nav__item'>
+          <a class='form-nav__link' href='#'>Попутчики</a>
+        </li>
+      </ul>
+
+      <button class='form-nav__login button-login'>Авторизация</button>
+
+      <p class='form-nav__about'>О сервисе направления попутчики</p>
+
+      <div class='contacts'>
+        <a class='contacts__phone' href='tel:88005558628'>8 800 555-86-28</a>
+        <a class='contacts__email' href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a>
+      </div>
+
+      <ul class='social-icons'>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/11x21/' alt='facebook'>
+          </a>
+        </li>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/23x12/' alt='vk'>
+          </a>
+        </li>
+        <li class='social-icons__list'>
+          <a class='social-icons__link'>
+            <img src='https://via.placeholder.com/18x18/' alt='inst'>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class='user-nav'>
+      <div class='user-nav__wrapper'>
+        <h2 class='user-nav__title'>Направления</h2>
+
+        <div class='user-nav__lvl'>
+          <p>80 level</p>
+        </div>
+
+        <img class='user-nav__avatar' src='https://via.placeholder.com/190x190' alt='avatar'>
+        <button>Сменить фото</button>
+      </div>
+
+      <fieldset class='user-info'>
+        <legend class='user-info__title'>Тэги</legend>
+        <textarea class='user-info__hashtags'>#бургер #бар #футбол #концерт #крафт</textarea>
+      </fieldset>
+
+      <fieldset class='user-info'>
+        <legend class='user-info__title'>Транспорт</legend>
+        1 2 3 4
+      </fieldset>
+    </section>
+
+    <section class='plans'>
+      <h2 class='plans__title form-title'>Мои планы</h2>
+      <div class='plans__wraper'>
+        <article class='plans__active'>
+          <p class='plans__country-name'>1. Франция, Италия</p>
+          <p class='plans__companions'>3 Попутчика</p>
+          <p class='plans__date'>26 Мар - 29 Мар</p>
+          <a class='plans__change' href='#'>Изменить</a>
+        </article>
+
+        <article class='plans__active'>
+          <p class='plans__country-name'>2. Таиланд, Индонезия</p>
+          <p class='plans__companions'>1 Попутчик</p>
+          <p class='plans__date'>1 Июл - 15 Июл</p>
+          <a class='plans__change' href='#'>Изменить</a>
+        </article>
+      </div>
+    </section>
+
+    <section class='step-1'>
+      <h2 class='step-1__title form-title'>Добавить план</h2>
+
+      <div class='step-1__wrapper'>
+        <h2 class='step-1__title'>Шаг 1.</h2>
+        <h3 class='step-1__title'>Даты пребывания</h3>
+
+        <p class='step-1__description'>Укажите предпочтительное количество попутчиков, которых
+          вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+
+        <label class='step-1__find'>Ищу попутчиков: Чел.
+          <input type='text'>
+        </label>
+
+        <label class='step-1__duration'>Длительность: Дн.
+          <input type='text'>
+        </label>
+
+        <label class='step-1__child'>
+          <input type='checkbox'>Можно с детьми
+        </label>
+
+        <div class='change'>
+          <a class='change__arrow'>&lt;</a>
+          <p class='change__month'>Март 2019</p>
+          <a class='change__arrow'>&gt;</a>
+        </div>
+
+
+        <div class='calendar'>
+          <ul class='calendar__list'>
+            <li class='calendar__item'>
+              П
+            </li>
+            <li class='calendar__item'>
+              В
+            </li>
+            <li class='calendar__item'>
+              С
+            </li>
+            <li class='calendar__item'>
+              Ч
+            </li>
+            <li class='calendar__item'>
+              П
+            </li>
+            <li class='calendar__item'>
+              С
+            </li>
+            <li class='calendar__item'>
+              В
+            </li>
+          </ul>
+
+          <div class='calendar-days'>
+            <ul class='calendar-days__list'>
+              <li class='calendar-days__item'>
+                1
+              </li>
+              <li class='calendar-days__item'>
+                2
+              </li>
+              <li class='calendar-days__item'>
+                3
+              </li>
+              <li class='calendar-days__item'>
+                4
+              </li>
+              <li class='calendar-days__item'>
+                5
+              </li>
+              <li class='calendar-days__item'>
+                6
+              </li>
+              <!-- позже продолжу.. -->
+            </ul>
+          </div>
+        </div>
+
+        <a href='#' class='step-1__button'>Следующий Шаг</a>
+      </div>
+    </section>
+
+    <section class='step-2'>
+      <div class='step-2__wrapper'>
+        <h2 class='step-2__title'>
+          Шаг 2.
+        </h2>
+        <h2 class='step-2__title'>
+          Маршрут
+        </h2>
+
+        <p class='step-2__description'>Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу
+          несколько.</p>
+
+        <div class='app'>
+          <div class='wrap'>Босния и Герцеговина
+            <div class='select'>* тут будет js селектор после нажатия на поле</div>
+          </div>
+        </div>
+
+        <div class='app'>
+          <div class='wrap'>Чехия
+            <div class='select'>* тут будет js селектор после нажатия на поле</div>
+          </div>
+        </div>
+
+        <div class='app'>
+          <div class='wrap'>Выберете страну
+            <div class='select'>* тут будет js селектор после нажатия на поле</div>
+          </div>
+        </div>
+
+        <div class='app'>
+          <div class='wrap'>Добавить страну
+            <div class='select'>* тут будет js селектор после нажатия на поле</div>
+          </div>
+        </div>
+
+
+        <a href="#">Следующий шаг</a>
+
+        <a href='#'>На шаг назад</a>
+      </div>
+    </section>
+
+    <section class='step-3'>
+      <div class="step-3__wrapper">
+        <h2 class="step-3__title">Шаг 3.</h2>
+        <h3 class="step-3__title">Развлечения</h3>
+
+        <p class='step-3__description'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной
+          форме и ставить тэги.
+        </p>
+
+        <div class='country'>
+          <h3 class='country__name country__name--bosnia'>Босния и Герцговина</h3>
+          <input class='country__field' type='text' placeholder="План действия">
+        </div>
+
+        <div class='country'>
+          <h3 class='country__name country__name--сzech'>Чехия</h3>
+          <input class='country__field' type='text'
+            value='Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.'>
+        </div>
+
+        <a href='#'>Отправить</a>
+
+        <a href='#'>На шаг назад</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class='page-footer'>
+    <div class='page-footer__wrapper'>
+
+      <div class='footer-social'>
+        <a class='footer-social__logo'>
+          <img src='https://via.placeholder.com/100x15/' alt='logo'>
+        </a>
+
+        <ul class='footer-social__list'>
+          <li class='footer-social__item'>
+            <a class='footer-social__link'>
+              <img class='footer-social__icon' src='https://via.placeholder.com/62x62/' alt='social'>
+            </a>
+          </li>
+          <li class='footer-social__item'>
+            <a class='footer-social__link'>
+              <img class='footer-social__icon' src='https://via.placeholder.com/62x62/' alt='social'>
+            </a>
+          </li>
+          <li class='footer-social__item'>
+            <a class='footer-social__link'>
+              <img class='footer-social__icon' src='https://via.placeholder.com/62x62/' alt='social'>
+            </a>
+          </li>
+        </ul>
+
+        <div class='footer-social__dev'>
+          <p class='footer-social__text'>Разработано</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

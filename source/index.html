@@ -25,7 +25,7 @@
         </li>
       </ul>
 
-      <button class='main-nav__login button__login'>Авторизация</button>
+      <button class='main-nav__login button-login'>Авторизация</button>
 
       <p class='main-nav__about'>О сервисе направления попутчики</p>
 
@@ -91,23 +91,23 @@
       </dl>
 
       <div class='main-nav'>
-        <a nav='nav__logo page-header__logo'>
-          <img src='https://via.placeholder.com/100x15/'>
+        <a class='main-nav__logo'>
+          <img src='https://via.placeholder.com/100x15/' alt='logo'>
         </a>
-        <ul class='nav__list main-nav__list'>
-          <li class='nav__item main-nav__item'>
-            <a class='nav__link main-nav__link' href='#'>О сервисе</a>
+        <ul class='main-nav__list'>
+          <li class='main-nav__item'>
+            <a class='main-nav__link' href='#'>О сервисе</a>
           </li>
-          <li class='nav__item main-nav__item'>
-            <a class='nav__link main-nav__link' href='#'>Направления</a>
+          <li class='main-nav__item'>
+            <a class='main-nav__link' href='#'>Направления</a>
           </li>
-          <li class='nav__item main-nav__item'>
-            <a class='nav__link main-nav__link' href='#'>Попутчики</a>
+          <li class='main-nav__item'>
+            <a class='main-nav__link' href='#'>Попутчики</a>
           </li>
         </ul>
       </div>
 
-      <button class='nav__login button__login'>
+      <button class='button-login'>
         Авторизация
       </button>
     </section>
@@ -155,15 +155,15 @@
             </article>
           </li>
           <li class='cards-country__item'>
-            <article lass='cards-country__wrapper'>
-              <h3 class='card-country__name'>Франция</h3>
+            <article class='cards-country__wrapper'>
+              <h3 class='cards-country__name'>Франция</h3>
               <p class='cards-country__description'>Трэ бьен. манифик!</p>
               <p class='cards-country__counter'>12518</p>
             </article>
           </li>
           <li class='cards-country__item'>
             <article class='cards-country__wrapper'>
-              <h3 class='card-country__name'>Франция</h3>
+              <h3 class='cards-country__name'>Франция</h3>
               <p class='cards-country__description'>Закоулки старой Европы</p>
               <p class='cards-country__counter'>5326</p>
             </article>
@@ -187,14 +187,14 @@
       <div class='users'>
         <article class='users__warpper'>
           <p class='users__level'>99 level</p>
-          <img class='users__avatar' src='https://via.placeholder.com/285x285'>
+          <img class='users__avatar' src='https://via.placeholder.com/285x285' alt='avatar'>
           <p class='users__name'>Таня Фирсова</p>
           <p class='users__hashtags'>#ЗОЖ #ПП #Фитнес #Пляж # авокадо #смузи</p>
         </article>
 
         <article class='users__warpper'>
           <p class='users__level'>80 level</p>
-          <img class='users__avatar' src='https://via.placeholder.com/285x285'>
+          <img class='users__avatar' src='https://via.placeholder.com/285x285' alt='avatar'>
           <p class='users__name'>Петя Демин</p>
           <p class='users__hashtags'>#бургер #бар #футбол #концерт #крафт</p>
         </article>
@@ -207,32 +207,32 @@
       <div class='price'>
         <dl class='price__list'>
           <div class='price__item'>
-            <dd class='price__number'>1</dd>
-            <dt class='price__description'>Базовое размещение</dt>
-            <dt class='price__value'>Бесплатно</dt>
+            <dt class='price__value'>1</dt>
+            <dd class='price__number'>Базовое размещение</dd>
+            <dd class='price__description'>Бесплатно</dd>
+
           </div>
 
           <div class='price__item'>
-            <dd class='price__number'>2</dd>
-            <dt class='price__description'>Вывод на первых позициях</dt>
-            <dt class='price__value'>99руб./мес</dt>
+            <dt class='price__number'>2</dt>
+            <dd class='price__description'>Вывод на первых позициях</dd>
+            <dd class='price__value'>99руб./мес</dd>
           </div>
 
           <div>
-            <dd class='price__number'>3</dd>
-            <dt class='price__description'>Кастомный цвет карточки</dt>
-            <dt class='price__value'>59руб./мес</dt>
+            <dt class='price__number'>3</dt>
+            <dd class='price__description'>Кастомный цвет карточки</dd>
+            <dd class='price__value'>59руб./мес</dd>
           </div>
         </dl>
         <a href='#'>Показать тарифы для бизнеса</a>
-      </div>
       </div>
 
       <div class='profile__wrapper'>
         <p class='profile__price price'>Бесплатно</p>
         <p class='profile__price price'>99 руб./мес</p>
         <p class='profile__price price'>59 руб./мес</p>
-        <img src='https://via.placeholder.com/198x198'>
+        <img src='https://via.placeholder.com/198x198' alt='bg'>
       </div>
     </section>
 
@@ -244,9 +244,9 @@
           Уже зарегистрированы? Тогда скорее <a href='#'>авторизуйтесь</a>.</p>
         <label class='registration__field'>
           <input class='registration__input' type='text'>
-          <button class='registration__button'>Регистрация</button>
         </label>
-        <p class='registration_question'>Остались вопросы? Мы с радость на них ответим!</p>
+        <button class='registration__button'>Регистрация</button>
+        <p class='registration__question'>Остались вопросы? Мы с радость на них ответим!</p>
 
         <ul class='registration-social social-icons'>
           <li class='registration-social__item social-icons__item'>
@@ -259,20 +259,22 @@
         </ul>
       </div>
     </section>
+
+    <section class='address'>
+      <h2 class='visually-hidden'>Адрес офиса</h2>
+      <div class='address__wrapper'>
+        <address class='address__street'>
+          Ул. большая конюшенная, 19/8
+        </address>
+        <a class='address__footer' href='#'>Проложить маршрут</a>
+      </div>
+
+      <div class='address__background'>*Фотография карты*</div>
+    </section>
   </main>
 
   <footer class='page-footer'>
     <div class='page-footer__wrapper'>
-      <div>
-        <h2 class='visually-hidden'>Адрес офиса</h2>
-        <address class='page-footer__address'>
-          Ул. большая конюшенная, 19/8
-        </address>
-        <a class='page-footer__button button' href='#'>Проложить маршрут</a>
-      </div>
-
-      <div class='page-footer__background'>*Фотография карты*</div>
-
       <div class='footer-social'>
         <a class='footer-social__logo'>
           <img src='https://via.placeholder.com/100x15/' alt='logo'>
