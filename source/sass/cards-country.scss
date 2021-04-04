@@ -1,0 +1,66 @@
+.cards-country__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-country__wrapper {
+  &--first {
+    margin-top: 20px;
+  }
+
+  &--secondary {
+    margin-top: 10px;
+  }
+
+  &--third {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.cards-country__photo {
+  position: relative;
+  z-index: 1;
+  min-width: 270px;
+  width: 100%;
+}
+
+.cards-country__content {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -15px;
+  position: relative;
+  z-index: 2;
+}
+
+.cards-country__counter {
+  position: absolute;
+  top: 30%;
+  right: 24px;
+  margin: 0;
+  color: $special-grey;
+  opacity: .5
+}
+
+.cards-country__name {
+  margin: 0;
+  font-family: BloggerSansBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  margin-left: 24px;
+  padding-top: 24px;
+}
+
+.cards-country__description {
+  margin: 0;
+  margin-left: 24px;
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: $special-grey;
+  opacity: .5
+}

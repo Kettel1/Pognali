@@ -1,0 +1,103 @@
+.registration {
+  margin-top: -25px;
+  background-color: $basic-blue-400;
+  position: relative;
+  z-index: 6;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__title {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__description {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 100%;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.registration__field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.registration__input {
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 62px;
+  width: 190px;
+  font-family: "BloggerSans";
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::placeholder {
+    font-family: "BloggerSansBold";
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.registration__button {
+  border: none;
+  height: 64px;
+  width: 60px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  background: $basic-yellow;
+  margin-left: -20px;
+  cursor: pointer;
+}
+
+.registration__question {
+  color: white;
+  text-align: center;
+}
+
+.registration-social {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 43px;
+}
+
+.registration-social__item {
+  display: flex;
+  align-items: center;
+}
+
+.registration-social__link {
+  color: $basic-yellow;
+  text-decoration: none;
+  font-family: "BloggerSansBold";
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  margin-left: 16px;
+}

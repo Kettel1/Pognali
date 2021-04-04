@@ -1,0 +1,28 @@
+.profile {
+  margin-top: -25px;
+  background-color: $basic-grey-100;
+  position: relative;
+  z-index: 7;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 24px;
+  align-items: center;
+}
+
+.profile__title {
+  color: $special-orange;
+  width: 110px;
+  margin: 0;
+}
+
+.profile__wrapper {
+  display: none;
+}

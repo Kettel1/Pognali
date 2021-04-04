@@ -1,0 +1,22 @@
+.second-nav {
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+}
+
+.second-nav__email,
+.second-nav__phone {
+  text-decoration: none;
+  display: block;
+}
+
+.second-nav__button {
+  color: $basic-blue;
+  background-color: $basic-yellow;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 190px;
+  text-transform: uppercase;
+}

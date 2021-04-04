@@ -1,0 +1,50 @@
+.main-nav {
+  background-image: url("../img/globe-back-mobile 1.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: auto;
+  position: relative;
+  background-color: $basic-blue;
+}
+
+.main-nav__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-top: 20px;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav__about {
+  display: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 0;
+  font-family: BloggerSansBold;
+  color: white;
+  max-width: 100%;
+  position: relative;
+}
+
+.header-content__img {
+  height: 255px;
+  width: 192px;
+  margin-left: 23px;
+}

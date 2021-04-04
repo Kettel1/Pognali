@@ -1,0 +1,45 @@
+.address {
+  background-color: $basic-yellow;
+  margin-top: -25px;
+  position: relative;
+  z-index: 5;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.address__wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+
+}
+
+.address__street {
+  font-family: BloggerSansBold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 22px;
+  width: 100%;
+  color: $basic-blue;
+  margin-left: 16px;
+}
+
+.address__button {
+  border: 3px solid $basic-blue-200;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  font-family: BloggerSansBold;
+  color: $basic-blue;
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}

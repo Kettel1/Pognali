@@ -1,0 +1,27 @@
+.direction {
+  background-color: $basic-grey;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  z-index: 9;
+}
+
+.direction__title  {
+  padding-top: 50px;
+}
+
+.direction__description  {
+  margin-bottom: 0;
+}
+
+.direction__button {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  margin-bottom: 30px;
+}
+
+

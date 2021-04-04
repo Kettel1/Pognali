@@ -1,1 +1,120 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "BloggerSans";
+  src: local("bloggersans"),
+  local("bloggersans"),
+  url("../fonts/bloggersans.woff2") format("woff2"),
+  url("../fonts/bloggersans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BloggerSansBold";
+  src: local("bloggersans"),
+  local("bloggersans"),
+  url("../fonts/bloggersans-bold.woff2") format("woff2"),
+  url("../fonts/bloggersans-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+//Colors
+$basic-blue: #1D2E5B;
+$basic-blue-100: #161C35;
+$basic-blue-200: #192144;
+$basic-blue-300: #132576;
+$basic-blue-400: #192144;
+
+$special-orange: #FF8D30;
+$special-orange-100: #FFA530;
+$special-orange-200: #FFBD30;
+$basic-yellow: #FFD74B;
+
+$basic-grey: #EDEFF6;
+$basic-grey-100: #E6E8F1;
+$special-grey: #444444;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggerSans";
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}
+
+.container {
+  min-width: 270px;
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 100%;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: "BloggerSansBold";
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+.big-button {
+  display: block;
+  color: $basic-blue;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none
+;
+}
+.title {
+  font-family: "BloggerSansBold";
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  color: $special-orange
+}
+
+.description {
+  font-family: "BloggerSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+//*,
+//*::after,
+//*::before {
+//  box-sizing: border-box;
+//}
+
+@import 'main-nav.scss';
+@import 'second-nav.scss';
+@import 'quote.scss';
+@import 'steps.scss';
+@import 'about-service.scss';
+@import 'direction.scss';
+@import 'cards-country.scss';
+@import 'travelers.scss';
+@import 'users.scss';
+@import 'price.scss';
+@import 'profile.scss';
+@import 'registration.scss';
+@import 'address.scss';
+@import 'map.scss';
+@import 'page-footer.scss';
+@import 'footer-social.scss';

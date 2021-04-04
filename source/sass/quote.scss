@@ -1,0 +1,27 @@
+.quote {
+  background-color: $basic-blue-100;
+  color: white;
+}
+
+.quote__quote {
+  margin: -1px;
+  margin-left: 24px;
+}
+
+.quote__wrapper {
+  padding-top: 30px;
+  width: 160px;
+}
+.quote__reviews {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.quote__name {
+  font-family: BloggerSansBold;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+}

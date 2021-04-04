@@ -1,0 +1,33 @@
+.about-service {
+  background-image: url("../img/about-mobile.png");
+  background-color: $basic-blue-100;
+  background-repeat: no-repeat;
+  background-position: center 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.about-service__title {
+  padding-top: 50px;
+}
+
+.about-service__description {
+  font-family: "BloggerSans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+}
+
+.about-service__sub-description {
+  font-family: 'BloggerSansBold';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+  width: 200px;
+  margin: 0;
+  padding-bottom: 50px;
+}
