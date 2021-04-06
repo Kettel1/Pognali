@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggerSans";
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+
+}
+
+.container {
+  min-width: 270px;
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 100%;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: "BloggerSansBold";
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+.big-button {
+  display: block;
+  color: $basic-blue;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.title {
+  font-family: "BloggerSansBold";
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  color: $special-orange
+}
+
+.description {
+  font-family: "BloggerSans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
