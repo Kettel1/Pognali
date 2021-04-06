@@ -13,11 +13,10 @@
   display: flex;
   align-items: center;
   margin-top: 50px;
-
 }
 
 .address__street {
-  font-family: BloggerSansBold;
+  font-family: "BloggerSansBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -36,7 +35,7 @@
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 22px;
-  font-family: BloggerSansBold;
+  font-family: "BloggerSansBold", sans-serif;
   color: $basic-blue;
   font-size: 18px;
   line-height: 18px;

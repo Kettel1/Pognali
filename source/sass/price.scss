@@ -13,7 +13,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
-  border-top: 1px solid #E1E3E9;
+  border-top: 1px solid $special-grey-300;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -32,6 +32,7 @@
     line-height: 40px;
     text-align: center;
   }
+
   &--secondary {
     background: $special-orange-200;
     height: 40px;
@@ -40,6 +41,7 @@
     line-height: 40px;
     text-align: center;
   }
+
   &--third {
     background: $basic-yellow;
     height: 40px;
@@ -65,7 +67,7 @@
   color: $basic-blue-300;
   font-size: 16px;
   line-height: 16px;
-  font-family: BloggerSansBold;
+  font-family: "BloggerSansBold", sans-serif;
   margin-bottom: 45px;
   margin-top: 20px;
 }

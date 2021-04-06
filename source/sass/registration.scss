@@ -46,14 +46,14 @@
   border-bottom-right-radius: 5px;
   height: 62px;
   width: 190px;
-  font-family: "BloggerSans";
+  font-family: "BloggerSans", sans-serif;
   font-size: 18px;
   line-height: 18px;
   padding-left: 20px;
   padding-right: 20px;
 
   &::placeholder {
-    font-family: "BloggerSansBold";
+    font-family: "BloggerSansBold", sans-serif;
     font-size: 18px;
     line-height: 18px;
   }
@@ -93,7 +93,7 @@
 .registration-social__link {
   color: $basic-yellow;
   text-decoration: none;
-  font-family: "BloggerSansBold";
+  font-family: "BloggerSansBold", sans-serif;
   font-style: normal;
   text-transform: uppercase;
   font-size: 16px;

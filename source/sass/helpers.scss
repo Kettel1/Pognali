@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "BloggerSans";
+  font-family: "BloggerSans", sans-serif;
 }
 
 .visually-hidden {
@@ -10,7 +10,6 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
-
 }
 
 .container {
@@ -23,11 +22,12 @@ body {
 .button {
   border: none;
   cursor: pointer;
-  font-family: "BloggerSansBold";
+  font-family: "BloggerSansBold", sans-serif;
   font-style: normal;
   font-size: 17px;
   line-height: 20px;
 }
+
 .big-button {
   display: block;
   color: $basic-blue;
@@ -40,16 +40,17 @@ body {
   cursor: pointer;
   border: none;
 }
+
 .title {
-  font-family: "BloggerSansBold";
+  font-family: "BloggerSansBold", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  color: $special-orange
+  color: $special-orange;
 }
 
 .description {
-  font-family: "BloggerSans";
+  font-family: "BloggerSans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;

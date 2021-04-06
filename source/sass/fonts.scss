@@ -1,9 +1,9 @@
 @font-face {
   font-family: "BloggerSans";
   src: local("bloggersans"),
-  local("bloggersans"),
-  url("../fonts/bloggersans.woff2") format("woff2"),
-  url("../fonts/bloggersans.woff") format("woff");
+    local("bloggersans"),
+    url("../fonts/bloggersans.woff2") format("woff2"),
+    url("../fonts/bloggersans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -11,10 +11,10 @@
 
 @font-face {
   font-family: "BloggerSansBold";
-  src: local("bloggersans"),
-  local("bloggersans"),
-  url("../fonts/bloggersans-bold.woff2") format("woff2"),
-  url("../fonts/bloggersans-bold.woff") format("woff");
+  src: local("BloggerSans"),
+    local("BloggerSans"),
+    url("../fonts/bloggersans-bold.woff2") format("woff2"),
+    url("../fonts/bloggersans-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
