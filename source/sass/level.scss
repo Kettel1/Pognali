@@ -1,0 +1,39 @@
+.level {
+  display: flex;
+  position: relative;
+}
+
+
+.level__number, .level__name {
+  position: absolute;
+}
+
+.level__number {
+  font-family: "BloggerSansBold",sans-serif;
+  top: 20px;
+  left: 30%;
+  font-size: 38px;
+  line-height: 38px;
+  margin: 0;
+  color: $basic-blue-100;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: $special-grey-600;
+    width: 51px;
+    bottom: 0;
+    left: -5px;
+  }
+}
+
+.level__name {
+  bottom: 20px;
+  left: 35%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: $special-grey;
+  margin: 0;
+}

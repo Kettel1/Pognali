@@ -1,0 +1,62 @@
+.change {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $basic-grey-200;
+    width: 100%;
+    height: 1px;
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: $basic-grey-200;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+  }
+}
+
+.change__month {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "BloggerSansBold",sans-serif;
+  color: $basic-blue;
+  margin: 10px 0;
+
+}
+
+.change__arrow {
+  border: none;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.3;
+
+  &--left {
+    position: absolute;
+    background: url("../../img/arrow.svg") no-repeat center;
+    height: 25px;
+    width: 15px;
+    background-size: 9px 18px;
+    top: 8px;
+    left: 0;
+  }
+
+  &--right {
+    position: absolute;
+    background: url("../../img/arrow.svg") no-repeat center;
+    height: 25px;
+    width: 15px;
+    background-size: 9px 18px;
+    top: 8px;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}

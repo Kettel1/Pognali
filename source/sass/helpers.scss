@@ -26,6 +26,8 @@ body {
   font-style: normal;
   font-size: 17px;
   line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .big-button {
@@ -55,4 +57,37 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+}
+
+.catalog-button {
+  font-family: "BloggerSansBold", sans-serif;
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 10px 0
+}
+
+.form-title {
+  color: $basic-blue;
+  font-family: "BloggerSansBold",sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form-link {
+  display: block;
+  font-family: "BloggerSansBold", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $basic-blue;
+  padding: 10px 0;
+  border-radius: 20px;
 }

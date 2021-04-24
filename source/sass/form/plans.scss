@@ -1,0 +1,51 @@
+.plans {
+  background: $special-grey-800;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  z-index: 9;
+  margin-top: -25px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.plans__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.plans__active {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+
+.plans__country-name {
+  font-family: "BloggerSansBold", sans-serif;
+  color: $basic-blue;
+}
+
+.plans__companions, .plans__date {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: $basic-blue;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.plans__change {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: black;
+  margin: 20px 0;
+  display: block;
+}
+
+

@@ -1,6 +1,9 @@
 @import "color.scss";
+@import "normalize.scss";
 @import "fonts.scss";
 @import "helpers.scss";
+
+//Index
 @import "main-nav.scss";
 @import "second-nav.scss";
 @import "quote.scss";
@@ -17,5 +20,26 @@
 @import "map.scss";
 @import "page-footer.scss";
 @import "footer-social.scss";
-@import "header-content";
-@import "registration-social";
+@import "header-content.scss";
+@import "registration-social.scss";
+@import "level.scss";
+
+//Catalog
+@import "catalog/catalog-nav";
+@import "catalog/companions.scss";
+@import "catalog/filter.scss";
+@import "catalog/selection.scss";
+@import "catalog/tabs.scss";
+@import "catalog/clients.scss";
+
+//Form
+@import "form/user-nav.scss";
+@import "form/user-info.scss";
+@import "form/plans.scss";
+@import "form/step-1.scss";
+@import "form/change.scss";
+@import "form/calendar.scss";
+@import "form/step-2.scss";
+@import "form/country-field.scss";
+@import "form/step-3.scss";
+@import "form/country.scss";

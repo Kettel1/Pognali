@@ -1,0 +1,137 @@
+.clients {
+  background-color: #edeff6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.clients__info {
+  background: white;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients__top-wrapper {
+  display: flex;
+  padding-top: 20px;
+
+}
+
+.clients__header {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients__header-name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "BloggerSansBold",sans-serif;
+  color: $basic-blue;
+  margin-bottom: 20px;
+}
+
+.clients__header-likes {
+  margin: 0;
+}
+
+.clients__country, .clients__transport, .clients__level {
+  margin-left: -25px;
+  margin-right: -25px;
+  border-top: 1px solid $basic-grey;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
+}
+
+.clients__list {
+  padding-left: 10px;
+  margin: 0;
+  list-style: none;
+
+  &--transport {
+    display: flex;
+  }
+}
+
+.clients__item {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "BloggerSansBold", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $basic-blue;
+}
+
+.clients__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients__level {
+  text-align: right;
+}
+
+.clients__level-title {
+  text-align: right;
+}
+
+.clients__button {
+  background-color: $basic-yellow;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.clients__level-value {
+  margin: 0;
+}
+
+.clients__button-more {
+  font-family: "BloggerSansBold", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  color: $basic-blue;
+
+  &::before {
+    content: "+";
+  //  Временное решение
+  }
+}
+
+.clients__wrapper-button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.clients__button-general {
+  background-color: white;
+  width: 49.5%;
+  border: none;
+  height: 51px;
+  cursor: pointer;
+
+  &--prev {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &--next {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &:hover {
+    background-color: grey;
+  }
+}

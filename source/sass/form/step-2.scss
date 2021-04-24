@@ -1,0 +1,33 @@
+.step-2 {
+  background: $special-grey-900;
+  padding-top: 10px;
+}
+
+.step-2__wrapper {
+  background: white;
+  padding: 24px 25px;
+  border-radius: 10px;
+}
+
+.step-2__title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #1d2e5b;
+  font-family: "BloggerSansBold", sans-serif;
+  margin: 0;
+}
+
+
+.step-2__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-2__next-step {
+  background: $basic-yellow;
+}
+
+.step-2__prev-step {
+  padding: 0;
+  margin-top: 20px;
+}

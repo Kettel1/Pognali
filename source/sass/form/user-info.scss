@@ -1,0 +1,31 @@
+.user-info {
+  border-radius: 10px;
+  border: 1px solid $special-grey-500;
+
+  &+.user-info {
+    margin-top: 20px;
+  }
+}
+
+.user-info__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-blue;
+  font-family: "BloggerSansBold",sans-serif;
+}
+
+.user-info__hashtags {
+  background: inherit;
+  border: none;
+  width: 100%
+}
+
+.user-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,157 @@
+.tabs {
+  border-top: 1px solid #F3C72B;
+}
+
+.tabs__title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "BloggerSansBold", sans-serif;
+  text-transform: uppercase;
+  color: $basic-blue
+}
+
+.tabs__list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.tabs__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.tabs__item input[type="checkbox"] + .tabs__name::after {
+  content: none;
+}
+
+.tabs__item input[type="checkbox"]:checked + .tabs__name::before {
+  background-image: none;
+}
+
+.tabs__item input[type="checkbox"]:checked + .tabs__name::after {
+  content: "";
+}
+
+.tabs__checkbox {
+  opacity: 0;
+}
+
+.tabs__name {
+  padding-left: 10px;
+  padding-top: 2px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/catalog-checkbox-off.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 4px;
+    top: 3px;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    background-image: url(../img/catalog-checkbox-on.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 4px;
+    left: 0;
+    top: 3px;
+    cursor: pointer;
+  }
+
+  &:hover::before, :hover::after {
+    opacity: 0.8;
+  }
+}
+
+.tabs__button {
+  background-color: white;
+  color: $basic-grey;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+
+.tabs__range {
+  display: flex;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    background: $special-grey-500;
+    height: 12px;
+    width: 1px;
+    left: 50%;
+    z-index: 1000;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    background: $special-grey-500;
+    height: 12px;
+    width: 1px;
+    left: 50%;
+    z-index: 1000;
+  }
+}
+
+.tabs__value {
+  width: 50%;
+  border: 1px solid $special-grey-500;
+  height: 31px;
+  text-align: center;
+  position: relative;
+  color: $basic-blue;
+  font-family: "BloggerSansBold",sans-serif;
+
+
+  &--left {
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: none
+  }
+
+  &--right {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-left: none;
+  }
+}
+
+.tabs__dash {
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: 1001;
+    left: 47%;
+    top: 50%;
+    background: $special-grey-500;
+    height: 1px;
+    width: 15px;
+  }
+
+}
