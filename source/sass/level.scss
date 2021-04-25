@@ -4,12 +4,13 @@
 }
 
 
-.level__number, .level__name {
+.level__number,
+.level__name {
   position: absolute;
 }
 
 .level__number {
-  font-family: "BloggerSansBold",sans-serif;
+  font-family: "BloggerSansBold", sans-serif;
   top: 20px;
   left: 30%;
   font-size: 38px;

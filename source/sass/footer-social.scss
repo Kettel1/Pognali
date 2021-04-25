@@ -39,3 +39,16 @@
     background-repeat: no-repeat;
   }
 }
+
+.footer-social__link {
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+.footer-social__list .footer-social__link {
+  background-color: #ffd74b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}

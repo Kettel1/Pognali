@@ -2,7 +2,7 @@
   border-radius: 10px;
   border: 1px solid $special-grey-500;
 
-  &+.user-info {
+  & + .user-info {
     margin-top: 20px;
   }
 }
@@ -13,13 +13,13 @@
   font-size: 16px;
   line-height: 18px;
   color: $basic-blue;
-  font-family: "BloggerSansBold",sans-serif;
+  font-family: "BloggerSansBold", sans-serif;
 }
 
 .user-info__hashtags {
   background: inherit;
   border: none;
-  width: 100%
+  width: 100%;
 }
 
 .user-info__list {

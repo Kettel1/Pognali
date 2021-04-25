@@ -22,4 +22,16 @@
   padding-bottom: 21px;
   padding-left: 23px;
   margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/arrow-right.svg") no-repeat;
+    background-size: 14px 13px;
+    height: 13px;
+    width: 14px;
+    top: 25px;
+    right: 20px;
+  }
 }

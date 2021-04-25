@@ -23,3 +23,24 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.main-nav__burger {
+  position: relative;
+  width: 25px;
+  height: 19px;
+  border: 0;
+  opacity: 1;
+  background: 0 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0 8px 0 0 white;
+  }
+}

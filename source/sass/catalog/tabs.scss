@@ -1,5 +1,5 @@
 .tabs {
-  border-top: 1px solid #F3C72B;
+  border-top: 1px solid $basic-yellow-100;
 }
 
 .tabs__title {
@@ -9,7 +9,7 @@
   line-height: 18px;
   font-family: "BloggerSansBold", sans-serif;
   text-transform: uppercase;
-  color: $basic-blue
+  color: $basic-blue;
 }
 
 .tabs__list {
@@ -53,7 +53,7 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    background-image: url(../img/catalog-checkbox-off.svg);
+    background-image: url("../img/catalog-checkbox-off.svg");
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -68,7 +68,7 @@
     position: absolute;
     height: 18px;
     width: 18px;
-    background-image: url(../img/catalog-checkbox-on.svg);
+    background-image: url("../img/catalog-checkbox-on.svg");
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -78,7 +78,8 @@
     cursor: pointer;
   }
 
-  &:hover::before, :hover::after {
+  &:hover::before,
+  :hover::after {
     opacity: 0.8;
   }
 }
@@ -125,13 +126,13 @@
   text-align: center;
   position: relative;
   color: $basic-blue;
-  font-family: "BloggerSansBold",sans-serif;
+  font-family: "BloggerSansBold", sans-serif;
 
 
   &--left {
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
-    border-right: none
+    border-right: none;
   }
 
   &--right {
@@ -142,7 +143,6 @@
 }
 
 .tabs__dash {
-
   &::before {
     position: absolute;
     content: "";
@@ -153,5 +153,4 @@
     height: 1px;
     width: 15px;
   }
-
 }

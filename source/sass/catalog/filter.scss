@@ -58,12 +58,9 @@
 }
 
 .filter__letter {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: 1px solid grey;
+  padding: 11px 15px;
   background: white;
+  border: 1px solid $special-grey-500;
 }
 
 .filter__letter-link {
@@ -75,19 +72,15 @@
   text-transform: uppercase;
 }
 
-
 .filter__line {
   border: none;
-}
-
-.filter__letter {
-  border: 1px solid $special-grey-500;
 }
 
 .filter__country {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .filter__country-name {
   margin-left: 25px;
   margin-top: 0;

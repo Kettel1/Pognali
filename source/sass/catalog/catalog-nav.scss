@@ -9,7 +9,7 @@
 .catalog-nav__header {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 .catalog-nav__title {
@@ -40,4 +40,25 @@
 
 .catalog-nav__title-link {
   display: none;
+}
+
+.catalog-nav__burger {
+  position: relative;
+  width: 25px;
+  height: 19px;
+  border: 0;
+  opacity: 1;
+  background: 0 0;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -1px;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    box-shadow: 0 8px 0 0 white;
+  }
 }

@@ -8,6 +8,7 @@
   background: white;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  padding: 10px 40px 10px;
 }
 
 .users__avatar {
@@ -22,8 +23,26 @@
   line-height: 21px;
   font-family: "BloggerSansBold", sans-serif;
   margin: 0;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $offline-red;
+    top: 24px;
+    left: 15px;
+  }
+}
+
+.users__name--online {
+  &::before {
+    background: $online-green;
+  }
 }
 
 .users__hashtags {
@@ -31,7 +50,8 @@
   text-align: center;
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 .users__content {
@@ -40,14 +60,23 @@
 
 .users__progressbar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 15px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  background-color: $special-black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
 }
 
 .users__level {
-  font-size: 24px;
-  line-height: 24px;
   color: white;
+  border-top: 1px solid white;
+  padding: 2px 3px 0;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 
@@ -58,5 +87,81 @@
 
   &--secondary {
     margin-bottom: 20px;
+  }
+}
+
+.users__stroke {
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.users__number {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "BloggerSansBold", sans-serif;
+  color: white;
+  margin-top: 10px;
+}
+
+.users__flag-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -20px;
+  position: relative;
+}
+
+.users__flag-item {
+  & + .users__flag-item {
+    margin-left: 20px;
+  }
+}
+
+.users__ways-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.users__ways-item {
+  width: 33px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--active {
+    .users__ways-image {
+      opacity: 1;
+    }
+  }
+}
+
+
+.users__ways-image {
+  opacity: 0.3;
+
+  &--air {
+    width: 20px;
+    height: 21px;
+  }
+
+  &--auto {
+    width: 17px;
+    height: 19px;
+  }
+
+  &--bike {
+    height: 24px;
+    width: 23px;
+  }
+
+  &--foot {
+    width: 20px;
+    height: 23px;
   }
 }

@@ -9,14 +9,10 @@
   border-collapse: collapse;
 }
 
-.calendar__line {
-}
-
 .calendar__week {
   text-align: center;
   width: 32px;
   height: 31px;
-
 }
 
 .calendar__letter {
@@ -27,13 +23,11 @@
 
   &--mark {
     background: $basic-blue;
-
   }
 
   &--active {
     background: $basic-grey;
   }
-
 }
 
 
@@ -58,6 +52,5 @@
 
   &--active {
     color: $basic-blue;
-
   }
 }

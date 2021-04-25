@@ -17,7 +17,6 @@
 .clients__top-wrapper {
   display: flex;
   padding-top: 20px;
-
 }
 
 .clients__header {
@@ -30,7 +29,7 @@
   margin: 0;
   font-size: 20px;
   line-height: 20px;
-  font-family: "BloggerSansBold",sans-serif;
+  font-family: "BloggerSansBold", sans-serif;
   color: $basic-blue;
   margin-bottom: 20px;
 }
@@ -39,7 +38,9 @@
   margin: 0;
 }
 
-.clients__country, .clients__transport, .clients__level {
+.clients__country,
+.clients__transport,
+.clients__level {
   margin-left: -25px;
   margin-right: -25px;
   border-top: 1px solid $basic-grey;
@@ -104,7 +105,6 @@
 
   &::before {
     content: "+";
-  //  Временное решение
   }
 }
 

@@ -101,7 +101,7 @@
   color: $basic-blue;
   text-transform: uppercase;
   letter-spacing: 0.09em;
-  opacity: 0.5
+  opacity: 0.5;
 }
 
 .step-1__checkbox-wrapper {
@@ -126,7 +126,7 @@
     position: absolute;
     width: 26px;
     height: 26px;
-    background-image: url(../../img/form-checkbox-off.svg);
+    background-image: url("../../img/form-checkbox-off.svg");
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -141,7 +141,7 @@
     position: absolute;
     height: 26px;
     width: 26px;
-    background-image: url(../../img/form-checkbox-on.svg);
+    background-image: url("../../img/form-checkbox-on.svg");
     background-color: white;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -166,5 +166,5 @@
 
 .step-1__link {
   background: $basic-yellow;
-  margin-top: 20px
+  margin-top: 20px;
 }
