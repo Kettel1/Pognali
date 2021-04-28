@@ -8,6 +8,7 @@
 .filter__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .filter__title {
@@ -18,8 +19,18 @@
   text-transform: uppercase;
   font-family: "BloggerSansBold", sans-serif;
   color: $basic-blue-400;
-  margin-left: 25px;
   position: relative;
+  padding-left: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../../img/filter-icon.svg") no-repeat center center;
+    height: 10px;
+    width: 15px;
+    top: 3px;
+    left: 0;
+  }
 }
 
 .filter__list {
@@ -39,10 +50,15 @@
 .filter__link {
   text-decoration: none;
   color: $basic-blue-400;
+  opacity: 0.3;
   font-family: "BloggerSansBold", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  &--active {
+    opacity: 1;
+  }
 }
 
 

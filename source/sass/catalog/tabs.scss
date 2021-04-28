@@ -16,11 +16,22 @@
   list-style: none;
   padding: 0;
   position: relative;
+
+  &--checkbox {
+    display: flex;
+  }
 }
 
 .tabs__item {
   position: relative;
   margin-bottom: 10px;
+
+  &--radio {
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+  }
 }
 
 .tabs__item input[type="checkbox"] + .tabs__name::after {
@@ -91,10 +102,10 @@
   margin-top: 25px;
 }
 
-
 .tabs__range {
   display: flex;
   position: relative;
+  margin-bottom: 20px;
 
   &::after {
     position: absolute;
@@ -152,5 +163,130 @@
     background: $special-grey-500;
     height: 1px;
     width: 15px;
+  }
+}
+
+.tabs__checkbox-ways {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+//Air
+.tabs__checkbox-ways + .tabs__radio-name::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/airplane.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.tabs__checkbox-ways:checked + .tabs__radio-name::before {
+  background-image: none;
+}
+
+.tabs__checkbox-ways:checked + .tabs__radio-name::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/airplane.svg");
+  background-repeat: no-repeat;
+}
+
+
+//Bus
+.tabs__checkbox-ways + .tabs__radio-name-bus::before {
+  background-image: url("../../img/bus.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.tabs__checkbox-ways:checked + .tabs__radio-name-bus::after {
+  background-image: url("../../img/bus.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+//Bike
+.tabs__checkbox-ways + .tabs__radio-name-bike::before {
+  background-image: url("../../img/bike.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.tabs__checkbox-ways:checked + .tabs__radio-name-bike::after {
+  background-image: url("../../img/bike.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+//Foot
+.tabs__checkbox-ways + .tabs__radio-name-foot::before {
+  background-image: url("../../img/foot.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.tabs__checkbox-ways:checked + .tabs__radio-name-foot::after {
+  background-image: url("../../img/foot.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+
+.tabs__scale {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: $special-blue-800;
+}
+
+.tabs__bar,
+.tabs__toggle {
+  position: absolute;
+  background-color: #1d2e5b;
+}
+
+.tabs__bar {
+  left: 50px;
+  margin-left: 19px;
+  top: 0;
+  width: 145px;
+  height: 2px;
+}
+
+.tabs__toggle {
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &--min {
+    right: 0;
+  }
+
+  &--max {
+    left: 67px;
   }
 }

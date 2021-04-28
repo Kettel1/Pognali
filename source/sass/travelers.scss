@@ -7,6 +7,25 @@
   border-bottom-left-radius: 30px;
   display: flex;
   flex-direction: column;
+  background-image:
+    url("../img/smolov-back.png"),
+    url("../img/rogovaya-back.png");
+  background-position:
+    150px 45px,
+    6px 307px;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-blue-600;
+    height: 132px;
+    width: 113px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 45px;
+    left: 20px;
+  }
 }
 
 .travelers__wrapper {
@@ -21,6 +40,7 @@
   font-size: 16px;
   line-height: 22px;
   color: white;
+  position: relative;
 }
 
 .travelers__sub-description {
@@ -53,4 +73,9 @@
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+.travelers__title {
+  margin-top: 40px;
+  position: relative;
 }
