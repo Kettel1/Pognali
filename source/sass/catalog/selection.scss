@@ -7,7 +7,7 @@
 .selection__title {
   font-size: 22px;
   line-height: 22px;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
   color: $basic-blue;
   width: 145px;
 }
@@ -21,4 +21,11 @@
   padding-right: 25px;
   display: flex;
   flex-direction: column;
+}
+
+.selection__button {
+  background-color: white;
+  color: $basic-grey;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }

@@ -22,8 +22,8 @@
 }
 
 .plans__country-name {
-  font-family: "BloggerSansBold", sans-serif;
   color: $basic-blue;
+  font-weight: bold;
 }
 
 .plans__companions,
@@ -47,4 +47,18 @@
   color: black;
   margin: 20px 0;
   display: block;
+  opacity: 0.3;
+}
+
+.plans__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.plans__item {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin-top: 10px;
 }

@@ -7,7 +7,7 @@
   margin-bottom: 0;
   font-size: 16px;
   line-height: 18px;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   color: $basic-blue;
 }
@@ -95,13 +95,6 @@
   }
 }
 
-.tabs__button {
-  background-color: white;
-  color: $basic-grey;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
 .tabs__range {
   display: flex;
   position: relative;
@@ -137,7 +130,7 @@
   text-align: center;
   position: relative;
   color: $basic-blue;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
 
 
   &--left {

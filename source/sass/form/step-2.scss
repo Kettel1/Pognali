@@ -13,7 +13,6 @@
   font-size: 20px;
   line-height: 20px;
   color: #1d2e5b;
-  font-family: "BloggerSansBold", sans-serif;
   margin: 0;
 }
 
@@ -30,4 +29,9 @@
 .step-2__prev-step {
   padding: 0;
   margin-top: 20px;
+}
+
+.step-2__description {
+  line-height: 22px;
+  font-size: 16px;
 }

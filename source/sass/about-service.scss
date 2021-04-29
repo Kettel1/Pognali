@@ -9,19 +9,21 @@
   z-index: 10;
 }
 
+.about-service__wrapper {
+  padding: 0 24px;
+}
+
 .about-service__title {
   padding-top: 50px;
 }
 
 .about-service__description {
-  font-family: "BloggerSans", sans-serif;
   font-style: normal;
   font-weight: 300;
   color: white;
 }
 
 .about-service__sub-description {
-  font-family: "BloggerSansBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

@@ -22,7 +22,6 @@ body {
 .button {
   border: none;
   cursor: pointer;
-  font-family: "BloggerSansBold", sans-serif;
   font-style: normal;
   font-size: 17px;
   line-height: 20px;
@@ -44,7 +43,6 @@ body {
 }
 
 .title {
-  font-family: "BloggerSansBold", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin: 0;
@@ -52,7 +50,6 @@ body {
 }
 
 .description {
-  font-family: "BloggerSans", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -60,7 +57,6 @@ body {
 }
 
 .catalog-button {
-  font-family: "BloggerSansBold", sans-serif;
   display: block;
   border-radius: 20px;
   text-align: center;
@@ -74,14 +70,12 @@ body {
 
 .form-title {
   color: $basic-blue;
-  font-family: "BloggerSansBold", sans-serif;
   font-size: 24px;
   line-height: 24px;
 }
 
 .form-link {
   display: block;
-  font-family: "BloggerSansBold", sans-serif;
   font-size: 17px;
   text-transform: uppercase;
   text-decoration: none;
@@ -90,4 +84,5 @@ body {
   color: $basic-blue;
   padding: 10px 0;
   border-radius: 20px;
+  font-weight: bold;
 }

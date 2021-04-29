@@ -45,7 +45,7 @@
 
 .clients__name {
   margin: 0;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
   color: $basic-blue;
   width: 77px;
   font-size: 20px;
@@ -58,7 +58,7 @@
   margin: 0;
   position: absolute;
   font-size: 14px;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
   color: $basic-grey;
   top: 50px;
   left: 14px;
@@ -133,7 +133,6 @@
 .clients__item {
   font-style: normal;
   font-weight: 500;
-  font-family: "BloggerSansBold", sans-serif;
   font-size: 15px;
   line-height: 16px;
   text-transform: uppercase;
@@ -187,7 +186,7 @@
 }
 
 .clients__button-more {
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;

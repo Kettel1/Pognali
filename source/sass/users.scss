@@ -21,11 +21,11 @@
   text-align: center;
   font-size: 21px;
   line-height: 21px;
-  font-family: "BloggerSansBold", sans-serif;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   position: relative;
+  font-weight: bold;
 
   &::before {
     content: "";
@@ -98,9 +98,9 @@
 .users__number {
   font-size: 24px;
   line-height: 24px;
-  font-family: "BloggerSansBold", sans-serif;
   color: white;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 .users__flag-list {
