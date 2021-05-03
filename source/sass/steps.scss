@@ -4,9 +4,17 @@
 }
 
 .steps__list {
-  margin-top: 0;
-  margin-bottom: -1px;
   padding-top: 20px;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .steps__item {
@@ -15,19 +23,49 @@
   padding-bottom: 50px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 35px 20px;
+    box-sizing: border-box;
+  }
 
   &--first {
     background: $special-orange;
+
+    @media (min-width: $tablet-width) {
+      width: 365px;
+      border-top-right-radius: 0;
+    }
   }
 
   &--second {
     background: $special-orange-100;
     margin-top: -25px;
+
+    @media (min-width: $tablet-width) {
+      flex-grow: 1;
+      margin-top: 0;
+      margin-left: -20px;
+    }
   }
 
   &--third {
     background: $special-orange-200;
     margin-top: -25px;
+
+    @media (min-width: $tablet-width) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      width: 365px;
+      margin-top: 0;
+    }
   }
 
   &--four {
@@ -36,22 +74,44 @@
     padding-bottom: 30px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      flex-grow: 1;
+      margin-top: 0;
+      margin-left: -20px;
+    }
   }
 }
 
 .steps__description {
   color: $basic-blue-100;
-  margin-left: 0;
   padding-left: 24px;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .steps__number {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   color: white;
   font-weight: bold;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 0;
+    margin-top: 15px;
+  }
 }

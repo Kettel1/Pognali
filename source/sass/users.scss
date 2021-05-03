@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .users__info {
@@ -9,6 +15,12 @@
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 10px 40px 10px;
+  max-width: 205px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 .users__avatar {

@@ -1,19 +1,34 @@
 .travelers {
-  margin-top: -25px;
+
   background-color: $basic-blue-200;
   position: relative;
   z-index: 8;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
-  display: flex;
-  flex-direction: column;
-  background-image:
-    url("../img/smolov-back.png"),
-    url("../img/rogovaya-back.png");
-  background-position:
-    150px 45px,
-    6px 307px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+  }
+}
+
+.travelers__wrapper {
+  padding-top: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 217px;
+  position: relative;
+  background-image: url("../img/smolov-back.png");
+  background-position: 121px 45px;
   background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 349px 95px;
+    padding-left: 0;
+  }
 
   &::before {
     content: "";
@@ -24,31 +39,63 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     top: 45px;
-    left: 20px;
-  }
-}
+    left: -15px;
 
-.travelers__wrapper {
-  padding-top: 50px;
-  padding-left: 24px;
-  padding-right: 24px;
-  width: 217px;
+    @media (min-width: $tablet-width) {
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+      top: 100px;
+      left: -30px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 64px 71px;
+    bottom: -75px;
+    left: -15px;
+    width: 64px;
+    height: 71px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/smolov-back-desktop@1x.png");
+      background-size: 141px 141px;
+      width: 141px;
+      height: 141px;
+      bottom: -115px;
+      left: -35px;
+    }
+  }
 }
 
 .travelers__description {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
   color: white;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 250px;
+  }
 }
 
 .travelers__sub-description {
   color: white;
   font-size: 16px;
   line-height: 22px;
-  font-family: "BloggerSansBold", sans-serif;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+    width: 200px;
+  }
 }
 
 .travelers__button {
@@ -68,6 +115,17 @@
     top: 25px;
     right: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    max-width: 570px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 25px 34px;
+  }
 }
 
 .travelers__image {
@@ -76,9 +134,25 @@
   display: block;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
 }
 
 .travelers__title {
-  margin-top: 40px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 130px;
+  }
+}
+
+.travelers__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

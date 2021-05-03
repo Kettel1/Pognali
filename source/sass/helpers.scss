@@ -4,6 +4,14 @@ body {
   font-family: "BloggerSans", sans-serif;
 }
 
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -16,8 +24,24 @@ body {
   min-width: 270px;
   margin: 0 auto;
   padding: 0 25px;
-  max-width: 100%;
+  max-width: 425px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 687px;
+    max-width: 767px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
 }
+
+
+*::after,
+*::before {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+  }
+}
+
 
 .button {
   border: none;
@@ -47,6 +71,13 @@ body {
   line-height: 24px;
   margin: 0;
   color: $special-orange;
+  font-style: normal;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }
 
 .description {
@@ -54,6 +85,11 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .catalog-button {

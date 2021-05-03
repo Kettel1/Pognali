@@ -4,18 +4,13 @@
   padding: 0;
 }
 
-.cards-country__wrapper {
-  &--first {
-    margin-top: 20px;
-  }
+.cards-country__item {
+  margin-bottom: 10px;
 
-  &--secondary {
-    margin-top: 10px;
-  }
-
-  &--third {
-    margin-top: 10px;
-    margin-bottom: 25px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
   }
 }
 
@@ -24,6 +19,15 @@
   z-index: 1;
   min-width: 270px;
   width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    width: 185px;
+    min-width: 185px;
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .cards-country__content {
@@ -32,6 +36,15 @@
   margin-top: -15px;
   position: relative;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    padding: 30px 0 25px 30px;
+  }
 }
 
 .cards-country__counter {
@@ -41,11 +54,32 @@
   margin: 0;
   color: $special-grey;
   opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/user.svg");
+      height: 20px;
+      width: 18px;
+      background-repeat: no-repeat;
+      background-size: 20px 18px;
+      top: 3px;
+      left: -30px;
+    }
+  }
 }
 
 .cards-country__name {
-  margin: 0;
-  font-family: "BloggerSansBold", sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -53,6 +87,14 @@
   margin-left: 24px;
   padding-top: 24px;
   position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-top: 0;
+    font-size: 24px;
+  }
+
 
   &::before {
     position: absolute;
@@ -63,20 +105,44 @@
     width: 35px;
     top: -12px;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      background: url("../img/thailand-tablet.svg") no-repeat;
+      top: 0;
+      left: 310px;
+      height: 47px;
+      width: 70px;
+    }
   }
+
 
   &--france {
     &::before {
       background: url("../img/france.png") no-repeat;
+
+      @media (min-width: $tablet-width) {
+        background: url("../img/france-tablet.svg") no-repeat;
+        top: 0;
+        height: 47px;
+        width: 70px;
+      }
     }
   }
 
   &--czech {
     &::before {
       background: url("../img/czech.png");
+
+      @media (min-width: $tablet-width) {
+        background: url("../img/czech-tablet.svg") no-repeat;
+        top: 0;
+        height: 47px;
+        width: 70px;
+      }
     }
   }
 }
+
 
 .cards-country__description {
   margin: 0;
@@ -87,4 +153,12 @@
   font-size: 16px;
   color: $special-grey;
   opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-bottom: 0;
+    margin-top: 5px;
+    font-size: 20px;
+    opacity: 0.3;
+  }
 }
