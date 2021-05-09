@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     background: $basic-blue-500;
   }
+
+  @media (min-width: $desktop-width) {
+    background: $basic-blue-700;
+  }
 }
 
 .header__wrapper {
@@ -13,6 +17,10 @@
   justify-content: space-between;
   padding-top: 20px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .header__logo {
@@ -41,6 +49,10 @@
     background-color: white;
     box-shadow: 0 8px 0 0 white;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 
@@ -52,6 +64,10 @@
     padding: 0;
     margin: 0;
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
   }
 }
 
@@ -67,4 +83,43 @@
   border-radius: 25px;
   padding: 16px 36px 16px;
   text-transform: uppercase;
+}
+
+.header__nav-list {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin-left: 140px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: white;
+      width: 60px;
+      height: 2px;
+      top: 7px;
+      left: -100px;
+    }
+  }
+}
+
+.header__nav-item {
+  &+.header__nav-item {
+    margin-left: 34px;
+  }
+}
+
+.header__nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
 }

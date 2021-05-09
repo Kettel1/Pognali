@@ -13,6 +13,10 @@
     margin-top: -50px;
     padding-top: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .registration__title {
@@ -122,11 +126,28 @@
     }
   }
 
+  &::after {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "Регистрация";
+      top: 27px;
+      left: 27px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      color: $basic-blue;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     height: 80px;
     margin-left: -50px;
     width: 84px;
     border-radius: 0 10px 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
   }
 }
 

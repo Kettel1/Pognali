@@ -20,6 +20,10 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 200px;
+  }
 }
 
 .direction__title {
@@ -27,7 +31,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-
     padding-top: 150px;
 
     &::before {
@@ -40,7 +43,33 @@
       height: 575px;
       background-repeat: no-repeat;
       border-radius: 20px;
+
+      @media (min-width: $desktop-width) {
+        z-index: -1;
+        top: -70px;
+        right: -170px;
+      }
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: $special-grey-400;
+      height: 141px;
+      width: 141px;
+      bottom: -450px;
+      left: -50px;
+      border-radius: 20px;
+
+      @media (min-width: $desktop-width) {
+        bottom: -60px;
+        left: -830px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
   }
 }
 
@@ -51,6 +80,10 @@
     max-width: 340px;
     padding: 60px 0 100px;
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -85,5 +118,49 @@
     font-size: 24px;
     line-height: 24px;
     padding: 25px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.direction__body {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-top: 200px;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-bottom: 110px;
+  }
+}
+
+.direction__small-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding: 28px 0 28px 32px;
+    background: $basic-yellow;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    width: 275px;
+    color: $basic-blue;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: url(../img/arrow-right.svg) no-repeat;
+      background-size: 14px 13px;
+      height: 13px;
+      width: 14px;
+      top: 35px;
+      right: 30px;
+    }
   }
 }

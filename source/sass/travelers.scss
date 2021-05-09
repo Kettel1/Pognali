@@ -10,6 +10,12 @@
   @media (min-width: $tablet-width) {
     margin-top: -50px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding-top: 210px;
+  }
 }
 
 .travelers__wrapper {
@@ -30,6 +36,17 @@
     padding-left: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-right: 0;
+    width: 50%;
+    margin: 0;
+    background-position: 68px 245px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -47,6 +64,11 @@
       border-radius: 20px;
       top: 100px;
       left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -60px;
+      left: 60px;
     }
   }
 
@@ -69,6 +91,11 @@
       bottom: -115px;
       left: -35px;
     }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 430px;
+    }
   }
 }
 
@@ -81,6 +108,8 @@
   @media (min-width: $tablet-width) {
     padding-right: 250px;
   }
+
+
 }
 
 .travelers__sub-description {
@@ -95,6 +124,10 @@
     position: relative;
     z-index: 1;
     width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }
 
@@ -126,6 +159,10 @@
     line-height: 24px;
     padding: 25px 34px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .travelers__image {
@@ -139,6 +176,10 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
 }
 
 .travelers__title {
@@ -147,6 +188,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 130px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .travelers__br {
@@ -154,5 +199,31 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.travelers__body {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.travelers__small-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding: 28px 0 28px 32px;
+    background: #ffd74b;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    width: 275px;
+    color: #1d2e5b;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
   }
 }

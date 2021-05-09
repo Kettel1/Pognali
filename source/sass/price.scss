@@ -9,11 +9,15 @@
   list-style: none;
   padding: 0;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    width: 70%;
   }
 }
 
@@ -33,6 +37,10 @@
     width: 560px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }
 
@@ -133,5 +141,9 @@
       top: -4px;
       left: -65px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0
   }
 }

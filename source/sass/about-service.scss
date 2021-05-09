@@ -15,17 +15,11 @@
     border-bottom-right-radius: 60px;
     border-bottom-left-radius: 60px;
     padding-top: 70px;
+  }
 
-    &::before {
-      content: "";
-      background: $basic-blue-600;
-      height: 212px;
-      width: 688px;
-      position: absolute;
-      top: 100px;
-      left: 38px;
-      border-radius: 20px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-top: 120px;
+
   }
 }
 
@@ -40,14 +34,41 @@
     position: relative;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/about-desktop@1x.png");
+    background-position: 690px bottom;
+    padding-bottom: 100px;
+  }
 }
 
 .about-service__title {
   padding-top: 50px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 45px;
     line-height: 45px;
+
+    &::after {
+      content: "";
+      background: $basic-blue-600;
+      height: 212px;
+      width: 688px;
+      position: absolute;
+      top: 0;
+      left: -10px;
+      border-radius: 20px;
+      z-index: -1;
+
+      @media (min-width: $desktop-width) {
+        width: 212px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
@@ -60,6 +81,12 @@
     font-weight: 300;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 620px;
+    margin-top: 60px;
+    margin-bottom: 35px;
   }
 }
 
@@ -77,6 +104,12 @@
     font-size: 21px;
     line-height: 25px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 410px;
+    margin-bottom: 85px;
+    padding-bottom: 0;
   }
 }
 

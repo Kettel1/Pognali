@@ -6,7 +6,7 @@ body {
 
 //Viewports
 $tablet-width: 768px;
-$desktop-width: 1200px;
+$desktop-width: 1440px;
 $mobile-width-only: 767px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
@@ -30,6 +30,13 @@ $retina-dppx: 1.5dppx;
     min-width: 687px;
     max-width: 767px;
     padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1320px;
+    max-width: 1440px;
+    padding: 0 60px;
     box-sizing: border-box;
   }
 }

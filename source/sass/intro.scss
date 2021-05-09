@@ -16,6 +16,14 @@
     background-size: 150% 75%;
     background-color: $basic-blue-500;
   }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-color: $basic-blue-700;
+    background-position: -93px 0;
+    background-size: cover;
+
+  }
 }
 
 .intro__content {
@@ -23,6 +31,25 @@
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+
+  @media (min-width: $desktop_width) {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 130px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/traveller-illustration-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 431px 640px;
+      background-position: 20px 250px;
+      margin-left: 420px;
+      height: 921px;
+      width: 640px;
+    }
+  }
 }
 
 .intro__title {
@@ -41,6 +68,13 @@
     width: 400px;
     margin-bottom: 80px;
     max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    position: relative;
+    margin-bottom: 0;
+
   }
 }
 
@@ -63,10 +97,19 @@
     height: 451px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .intro__wrapper {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 .intro__quote-block {

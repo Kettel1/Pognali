@@ -8,6 +8,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 630px;
+    margin-top: 0;
+  }
 }
 
 .users__info {
@@ -95,10 +101,18 @@
 .users__wrapper {
   &--first {
     margin-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &--secondary {
     margin-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
