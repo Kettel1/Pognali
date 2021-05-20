@@ -12,12 +12,38 @@
   color: $basic-blue;
 }
 
+.tabs__title-tablet {
+  display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media(min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .tabs__list {
   list-style: none;
   padding: 0;
   position: relative;
 
   &--checkbox {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 490px;
+    justify-content: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.tabs__content {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 }

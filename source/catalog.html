@@ -49,149 +49,273 @@
     </symbol>
   </svg>
 </div>
-<header class='page-header'>
-  <h1 class='visually-hidden'>Сервис Погнали!</h1>
+<header class='header header--catalog'>
+  <div class="container">
+    <h1 class='visually-hidden'>Сервис Погнали!</h1>
+    <div class='header__wrapper'>
+      <a class='header__link' href="#">
+        <picture>
+          <source media="(min-width: 1440px)"
+                  srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.png 1x, img/logo-tablet-white@2x.png 2x">
+          <img class="header__logo" src='img/logo-mobile-white@1x.png' srcset="img/logo-mobile-white@2x.png 2x"
+               width="100" height="19" alt="Логотип">
+        </picture>
+      </a>
+      <button class="header__burger">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
 
-  <nav class='catalog-nav'>
-    <div class="container">
-      <div class="catalog-nav__header">
-        <a class='page-header__logo'>
-          <img src='img/logo_mobile-3.png' alt='logo'>
-        </a>
-        <button class='catalog-nav__burger'>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-      </div>
-      <h2 class="catalog-nav__title catalog-nav__title--active">Попутчики</h2>
-      <a class="catalog-nav__title-link" href='catalog.html'>На главную</a>
-      <!--    <ul class='catalog-nav__list'>-->
-      <!--      <li class='catalog-nav__item'>-->
-      <!--        <a class='catalog-nav__link' href='#'>О сервисе</a>-->
-      <!--      </li>-->
-      <!--      <li class='catalog-nav__item'>-->
-      <!--        <a class='catalog-nav__link' href='#'>Направления</a>-->
-      <!--      </li>-->
-      <!--      <li class='catalog-nav__item'>-->
-      <!--        <a class='catalog-nav__link' href='#'>Попутчики</a>-->
-      <!--      </li>-->
-      <!--    </ul>-->
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__nav-link">О сервисе</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="form.html" class="header__nav-link">Направления</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="catalog.html" class="header__nav-link">Попутчики</a>
+        </li>
+      </ul>
 
-
-      <!--      <p class='catalog-nav__about'>О сервисе направления попутчики</p>-->
-
-      <!--      <div class='contacts'>-->
-      <!--        <a class='contacts__phone' href='tel:88005558628'>8 800 555-86-28</a>-->
-      <!--        <a class='contacts__email' href='mailto:mail@htmlacademy.ru'>mail@htmlacademy.ru</a>-->
-      <!--      </div>-->
-
-      <!--      <ul class='social-icons'>-->
-      <!--        <li class='social-icons__list'>-->
-      <!--          <a class='social-icons__link'>-->
-      <!--            <img src='https://via.placeholder.com/11x21/' alt='facebook'>-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li class='social-icons__list'>-->
-      <!--          <a class='social-icons__link'>-->
-      <!--            <img src='https://via.placeholder.com/23x12/' alt='vk'>-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--        <li class='social-icons__list'>-->
-      <!--          <a class='social-icons__link'>-->
-      <!--            <img src='https://via.placeholder.com/18x18/' alt='inst'>-->
-      <!--          </a>-->
-      <!--        </li>-->
-      <!--      </ul>-->
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__auth-button big-button" href="#">Авторизация</a>
+        </li>
+        <li class="header__item header__item--hidden">
+          <a class="" href="tel:88005558628">
+            <div class=""></div>
+            <span class="">8 800 555-86-28</span>
+          </a>
+        </li>
+        <li class="header__item header__item--hidden">
+          <a class="" href="mailto:mail@htmlacademy.ru" target="_top">
+            <div class=""></div>
+            <span class="">mail@htmlacademy.ru</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
 </header>
 
 <main>
-  <section class='companions'>
-
-    <div class='filter'>
-      <div class="container">
-        <div class="filter__header">
-          <h2 class="filter__title">Фильтрация по странам</h2>
-          <button></button>
+  <div class="header-second">
+    <div class="container">
+      <div class="header-second__body">
+        <h1 class="header-second__title">Попутчики</h1>
+        <a class="header-second__link" href="index.html">На главную</a>
+      </div>
+    </div>
+  </div>
+  <section class='filter'>
+    <div class="container">
+      <div class="filter__header">
+        <h2 class="filter__title">Фильтрация по странам</h2>
+        <button></button>
+      </div>
+      <div class="filter__select">
+        <ul class='filter__list'>
+          <li class='filter__item'>
+            <a href="#" class='filter__link filter__link--active'>
+              Европа
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a href="#" class='filter__link'>
+              Азия
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a href="#" class='filter__link'>
+              Америка
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a href="#" class='filter__link'>
+              Острова
+            </a>
+          </li>
+        </ul>
+        <table class="filter__alphabet-table">
+          <tr class="filter__line">
+            <td class="filter__letter"><a href="#" class="filter__letter-link">А</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Б</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">В</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Г</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Д</a></td>
+          </tr>
+          <tr class="filter__line">
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Е</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">З</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">И</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">К</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Л</a></td>
+          </tr>
+          <tr class="filter__line">
+            <td class="filter__letter"><a href="#" class="filter__letter-link">М</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Н</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">О</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">П</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Р</a></td>
+          </tr>
+          <tr class="filter__line">
+            <td class="filter__letter"><a href="#" class="filter__letter-link">С</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Т</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">У</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Ф</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Х</a></td>
+          </tr>
+          <tr class="filter__line">
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Ч</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Ш</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Э</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Ю</a></td>
+            <td class="filter__letter"><a href="#" class="filter__letter-link">Я</a></td>
+          </tr>
+        </table>
+        <ul class="filter__alphabet-list">
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">А</a>
+            <ul class="alphabet-name">
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Австралия
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Австрия
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Албания
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Алжир
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Ангола
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Андорра
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Антигуа и Барбуда
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Аргентина
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Армения
+                </a>
+              </li>
+              <li class="alphabet-name__item">
+                <a href="#" class="alphabet-name__link">
+                  Афганистан
+                </a>
+              </li>
+            </ul>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Б</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">В</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Г</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Д</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Е</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">З</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">И</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">К</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Л</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">М</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Н</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">О</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">П</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Р</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">С</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Т</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">У</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Ф</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Х</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Ч</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Ш</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Э</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Ю</a>
+          </li>
+          <li class="filter__alphabet-item">
+            <a class="filter__alphabet-link">Я</a>
+          </li>
+        </ul>
+        <div class="filter__country">
+          <p class="filter__country-name">Австралия</p>
+          <p class="filter__country-name">Австрия</p>
+          <p class="filter__country-name">Албания</p>
+          <p class="filter__country-name">Алжир</p>
+          <p class="filter__country-name">Ангола</p>
+          <p class="filter__country-name">Андорра</p>
+          <p class="filter__country-name">Антигуа и Барбуда</p>
+          <p class="filter__country-name">Аргентина</p>
+          <p class="filter__country-name">Армения</p>
+          <p class="filter__country-name">Афганистан</p>
         </div>
-        <div class="filter__select">
-          <ul class='filter__list'>
-            <li class='filter__item'>
-              <a href="#" class='filter__link filter__link--active'>
-                Европа
-              </a>
-            </li>
-            <li class='filter__item'>
-              <a href="#" class='filter__link'>
-                Азия
-              </a>
-            </li>
-            <li class='filter__item'>
-              <a href="#" class='filter__link'>
-                Америка
-              </a>
-            </li>
-            <li class='filter__item'>
-              <a href="#" class='filter__link'>
-                Острова
-              </a>
-            </li>
-          </ul>
 
-          <!-- Mobile, tablet -->
-
-          <table class="filter__alphabet">
-            <tr class="filter__line">
-              <td class="filter__letter"><a href="#" class="filter__letter-link">А</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Б</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">В</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Г</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Д</a></td>
-            </tr>
-            <tr class="filter__line">
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Е</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">З</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">И</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">К</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Л</a></td>
-            </tr>
-            <tr class="filter__line">
-              <td class="filter__letter"><a href="#" class="filter__letter-link">М</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Н</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">О</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">П</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Р</a></td>
-            </tr>
-            <tr class="filter__line">
-              <td class="filter__letter"><a href="#" class="filter__letter-link">С</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Т</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">У</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Ф</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Х</a></td>
-            </tr>
-            <tr class="filter__line">
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Ч</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Ш</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Э</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Ю</a></td>
-              <td class="filter__letter"><a href="#" class="filter__letter-link">Я</a></td>
-            </tr>
-          </table>
-          <div class="filter__country">
-            <p class="filter__country-name">Австралия</p>
-            <p class="filter__country-name">Австрия</p>
-            <p class="filter__country-name">Албания</p>
-            <p class="filter__country-name">Алжир</p>
-            <p class="filter__country-name">Ангола</p>
-            <p class="filter__country-name">Андорра</p>
-            <p class="filter__country-name">Антигуа и Барбуда</p>
-            <p class="filter__country-name">Аргентина</p>
-            <p class="filter__country-name">Армения</p>
-            <p class="filter__country-name">Афганистан</p>
-          </div>
-
-          <a class="filter__button" href="#">Свернуть</a>
-        </div>
+        <a class="filter__button" href="#">Свернуть</a>
       </div>
     </div>
   </section>
@@ -203,8 +327,8 @@
         <h2 class="selection__title">Подберите идеального попутчика</h2>
 
         <div class='tabs'>
-          <p class="tabs__title">Хобби:</p>
           <div class='tabs__content'>
+            <p class="tabs__title">Хобби:</p>
             <ul class='tabs__list'>
               <li class='tabs__item'>
                 <input class='tabs__checkbox' type='checkbox' id="swim">
@@ -317,7 +441,8 @@
 
             <a class="clients__image-link" href="firsova.html">
               <picture>
-                <img class="clients__avatar" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"  alt='avatar' width="70" height="70">
+                <img class="clients__avatar" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"
+                     alt='avatar' width="70" height="70">
               </picture>
             </a>
 
@@ -363,7 +488,8 @@
               </p>
               <ul class='clients__list-transport'>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"  width="14" alt="airplane">
+                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"
+                       width="14" alt="airplane">
                 </li>
                 <li class='clients__item-transport'>
                   <img class="clients__item-image" src="img/bus.svg" height="16" width="13" alt="bus">
@@ -397,7 +523,8 @@
 
             <a class="clients__image-link" href="demin.html">
               <picture>
-                <img class="clients__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"  alt='avatar' width="70" height="70">
+                <img class="clients__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
+                     alt='avatar' width="70" height="70">
               </picture>
             </a>
 
@@ -439,16 +566,19 @@
               </p>
               <ul class='clients__list-transport'>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"  width="14" alt="airplane">
+                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"
+                       width="14" alt="airplane">
                 </li>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/bus.svg" height="16" width="13" alt="bus">
+                  <img class="clients__item-image clients__item-image--active" src="img/bus.svg" height="16" width="13"
+                       alt="bus">
                 </li>
                 <li class='clients__item-transport'>
                   <img class="clients__item-image" src="img/bike.svg" height="17" width="14" alt="bike">
                 </li>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/foot.svg" height="17"  width="13" alt="foot">
+                  <img class="clients__item-image clients__item-image--active" src="img/foot.svg" height="17" width="13"
+                       alt="foot">
                 </li>
               </ul>
             </div>
@@ -473,7 +603,8 @@
 
             <a class="clients__image-link" href="demin.html">
               <picture>
-                <img class="clients__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"  alt='avatar' width="70" height="70">
+                <img class="clients__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
+                     alt='avatar' width="70" height="70">
               </picture>
             </a>
 
@@ -519,13 +650,15 @@
               </p>
               <ul class='clients__list-transport'>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"  width="14" alt="airplane">
+                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"
+                       width="14" alt="airplane">
                 </li>
                 <li class='clients__item-transport'>
                   <img class="clients__item-image" src="img/bus.svg" height="16" width="13" alt="bus">
                 </li>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/bike.svg" height="17" width="14" alt="bike">
+                  <img class="clients__item-image clients__item-image--active" src="img/bike.svg" height="17" width="14"
+                       alt="bike">
                 </li>
                 <li class='clients__item-transport'>
                   <img class="clients__item-image" src="img/foot.svg" height="17" width="13" alt="foot">
@@ -553,7 +686,8 @@
 
             <a class="clients__image-link" href="demin.html">
               <picture>
-                <img class="clients__avatar" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt='avatar' width="70" height="70">
+                <img class="clients__avatar" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x"
+                     alt='avatar' width="70" height="70">
               </picture>
             </a>
 
@@ -599,10 +733,12 @@
               </p>
               <ul class='clients__list-transport'>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16" width="14" alt="airplane">
+                  <img class="clients__item-image clients__item-image--active" src="img/airplane.svg" height="16"
+                       width="14" alt="airplane">
                 </li>
                 <li class='clients__item-transport'>
-                  <img class="clients__item-image clients__item-image--active" src="img/bus.svg" height="16" width="13" alt="bus">
+                  <img class="clients__item-image clients__item-image--active" src="img/bus.svg" height="16" width="13"
+                       alt="bus">
                 </li>
                 <li class='clients__item-transport'>
                   <img class="clients__item-image" src="img/bike.svg" height="17" width="14" alt="bike">
@@ -631,8 +767,10 @@
       <a class="clients__button-more">Показать еще</a>
 
       <div class="clients__wrapper-button">
-        <button class="clients__button-general clients__button-general--prev"><span class="visually-hidden">Назад</span></button>
-        <button class="clients__button-general clients__button-general--next"><span class="visually-hidden">Вперед</span></button>
+        <button class="clients__button-general clients__button-general--prev"><span class="visually-hidden">Назад</span>
+        </button>
+        <button class="clients__button-general clients__button-general--next"><span
+          class="visually-hidden">Вперед</span></button>
       </div>
 
     </div>
@@ -649,21 +787,27 @@
         <ul class='footer-social__list'>
           <li class='footer-social__item'>
             <a class='footer-social__link'>
-              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--facebook" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve" width="11" height="21">
+              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--facebook"
+                   xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve"
+                   width="11" height="21">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class='footer-social__item'>
             <a class='footer-social__link'>
-              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--vkontakte" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 15.8" xml:space="preserve" width="23" height="12">
+              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--vkontakte" version="1.1"
+                   xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 15.8" xml:space="preserve"
+                   width="23" height="12">
               <use xlink:href="#icon-vkontakte"></use>
             </svg>
             </a>
           </li>
           <li class='footer-social__item'>
             <a class='footer-social__link'>
-              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve" width="18" height="18">
+              <svg fill="#192144" class="footer-social__link-image footer-social__link-image--instagram" version="1.1"
+                   xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve"
+                   width="18" height="18">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
             </a>

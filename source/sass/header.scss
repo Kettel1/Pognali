@@ -5,11 +5,17 @@
 
   @media (min-width: $tablet-width) {
     background: $basic-blue-500;
+
+    &--catalog {
+      background: $basic-blue-700;
+    }
   }
 
   @media (min-width: $desktop-width) {
     background: $basic-blue-700;
   }
+
+
 }
 
 .header__wrapper {
