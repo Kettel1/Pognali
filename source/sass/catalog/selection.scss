@@ -1,0 +1,31 @@
+.selection {
+  background-color: $basic-grey;
+  margin-top: -25px;
+  padding-top: 25px;
+}
+
+.selection__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: bold;
+  color: $basic-blue;
+  width: 145px;
+}
+
+.selection__wrapper {
+  margin-top: 25px;
+  padding-top: 10px;
+  background-color: $basic-yellow;
+  border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selection__button {
+  background-color: white;
+  color: $basic-grey;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}

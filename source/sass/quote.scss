@@ -1,0 +1,34 @@
+.quote {
+  background-color: $basic-blue-100;
+  color: white;
+}
+
+.quote__quote {
+  margin: 0;
+  padding: 0 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.quote__wrapper {
+  padding-top: 30px;
+  width: 160px;
+}
+
+.quote__reviews {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: white;
+}
+
+.quote__name {
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}

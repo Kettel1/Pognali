@@ -1,0 +1,229 @@
+.travelers {
+
+  background-color: $basic-blue-200;
+  position: relative;
+  z-index: 8;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding-top: 210px;
+  }
+}
+
+.travelers__wrapper {
+  padding-top: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 217px;
+  position: relative;
+  background-image: url("../img/smolov-back.png");
+  background-position: 121px 45px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    background-position: 349px 95px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-right: 0;
+    width: 50%;
+    margin: 0;
+    background-position: 68px 245px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $basic-blue-600;
+    height: 132px;
+    width: 113px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: 45px;
+    left: -15px;
+
+    @media (min-width: $tablet-width) {
+      width: 212px;
+      height: 212px;
+      border-radius: 20px;
+      top: 100px;
+      left: -30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -60px;
+      left: 60px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/rogovaya-back-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 64px 71px;
+    bottom: -75px;
+    left: -15px;
+    width: 64px;
+    height: 71px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/smolov-back-desktop@1x.png");
+      background-size: 141px 141px;
+      width: 141px;
+      height: 141px;
+      bottom: -115px;
+      left: -35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+      left: 430px;
+    }
+  }
+}
+
+.travelers__description {
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 250px;
+  }
+
+
+}
+
+.travelers__sub-description {
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 24px;
+    position: relative;
+    z-index: 1;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
+}
+
+.travelers__button {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/arrow-right.svg") no-repeat;
+    background-size: 14px 13px;
+    height: 13px;
+    width: 14px;
+    top: 25px;
+    right: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    max-width: 570px;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 25px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.travelers__image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.travelers__title {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.travelers__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.travelers__body {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.travelers__small-button {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    padding: 28px 0 28px 32px;
+    background: #ffd74b;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    width: 275px;
+    color: #1d2e5b;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+  }
+}

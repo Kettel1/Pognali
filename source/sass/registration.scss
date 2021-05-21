@@ -1,0 +1,173 @@
+.registration {
+  margin-top: -25px;
+  background-color: $basic-blue-400;
+  position: relative;
+  z-index: 6;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin-top: -50px;
+    padding-top: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.registration__title {
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.registration__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration__description {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 100%;
+  width: 210px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    width: auto;
+    margin-top: 40px;
+  }
+}
+
+.registration__auth {
+  color: $basic-yellow;
+}
+
+.registration__field {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+}
+
+.registration__input {
+  border: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 62px;
+  width: 100%;
+  font-family: "BloggerSans", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &::placeholder {
+    font-family: "BloggerSansBold", sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    padding: 30px 35px 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.registration__button {
+  border: none;
+  height: 64px;
+  width: 73px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  background: $basic-yellow;
+  margin-left: -20px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url("../img/arrow-right.svg") no-repeat;
+    background-size: 14px 13px;
+    height: 13px;
+    width: 14px;
+    top: 25px;
+    right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 35px;
+      right: 32px;
+    }
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      content: "Регистрация";
+      top: 27px;
+      left: 27px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+      color: $basic-blue;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+    margin-left: -50px;
+    width: 84px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 330px;
+  }
+}
+
+.registration__question {
+  color: white;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    font-style: normal;
+  }
+}
+
+.registration__br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

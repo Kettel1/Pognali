@@ -1,0 +1,26 @@
+.second-nav {
+  display: flex;
+  margin-top: -30px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.second-nav__email,
+.second-nav__phone {
+  text-decoration: none;
+  display: block;
+}
+
+.second-nav__button {
+  color: $basic-blue;
+  background-color: $basic-yellow;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 190px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

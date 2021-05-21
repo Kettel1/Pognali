@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "BloggerSans", sans-serif;
+}
+
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  min-width: 270px;
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 425px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 687px;
+    max-width: 767px;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1320px;
+    max-width: 1440px;
+    padding: 0 60px;
+    box-sizing: border-box;
+  }
+}
+
+
+*::after,
+*::before {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+  }
+}
+
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.big-button {
+  display: block;
+  color: $basic-blue;
+  text-decoration: none;
+  background-color: $basic-yellow;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  color: $special-orange;
+  font-style: normal;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.catalog-button {
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  padding: 10px 0;
+}
+
+.form-title {
+  color: $basic-blue;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.form-link {
+  display: block;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: $basic-blue;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-weight: bold;
+}

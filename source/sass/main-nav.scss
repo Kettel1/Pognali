@@ -1,0 +1,30 @@
+.main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+}
+
+.main-nav__item {
+  &--hidden {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.main-nav__auth-button {
+  border-radius: 25px;
+  padding: 16px 36px 16px;
+  text-transform: uppercase;
+}
+
+.main-nav__about {
+  display: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}

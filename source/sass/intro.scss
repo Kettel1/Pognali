@@ -1,0 +1,141 @@
+.intro {
+  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: auto;
+  position: relative;
+  background-color: $basic-blue-700;
+  width: 100%;
+  background-position: 0 -145px;
+  background-size: 100% 60%;
+
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/globe-back-tablet@1x.jpg");
+    background-position: 40% 114px;
+    background-size: 150% 75%;
+    background-color: $basic-blue-500;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/globe-back-desktop@1x.jpg");
+    background-color: $basic-blue-700;
+    background-position: -93px 0;
+    background-size: cover;
+
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+
+  @media (min-width: $desktop_width) {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 130px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/traveller-illustration-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 431px 640px;
+      background-position: 20px 250px;
+      margin-left: 420px;
+      height: 921px;
+      width: 640px;
+    }
+  }
+}
+
+.intro__title {
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0 0;
+  color: white;
+  max-width: 282px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 70px;
+    width: 400px;
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    position: relative;
+    margin-bottom: 0;
+
+  }
+}
+
+.intro__quote {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+  }
+}
+
+.intro__img {
+  margin-left: 23px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 372px;
+    height: 451px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.intro__wrapper {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.intro__quote-block {
+  margin: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.intro__reviews,
+.intro__name {
+  color: white;
+}
+
+.intro__reviews {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 45px;
+}
+
+.intro__name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 25px;
+  font-style: normal;
+}

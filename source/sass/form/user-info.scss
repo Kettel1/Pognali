@@ -1,0 +1,142 @@
+.user-info {
+  border-radius: 10px;
+  border: 1px solid $special-grey-500;
+
+  & + .user-info {
+    margin-top: 20px;
+  }
+}
+
+.user-info__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: $basic-blue;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.user-info__hashtags {
+  background: inherit;
+  border: none;
+  width: 90%;
+  opacity: 0.3;
+  resize: none;
+  height: 60px;
+  padding: 10px;
+}
+
+.user-info__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.user-info__checkbox-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.user-info__item {
+  position: relative;
+  margin-bottom: 10px;
+
+  &--radio {
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+  }
+}
+
+
+.user-info__checkbox-ways {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.user-info__checkbox-ways + .user-info__radio-name::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/airplane.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user-info__checkbox-ways:checked + .user-info__radio-name::before {
+  background-image: none;
+}
+
+.user-info__checkbox-ways:checked + .user-info__radio-name::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../../img/airplane.svg");
+  background-repeat: no-repeat;
+}
+
+//Bus
+.user-info__checkbox-ways + .user-info__radio-name--bus::before {
+  background-image: url("../../img/bus.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.user-info__checkbox-ways:checked + .user-info__radio-name--bus::after {
+  background-image: url("../../img/bus.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+//Bike
+.user-info__checkbox-ways + .user-info__radio-name--bike::before {
+  background-image: url("../../img/bike.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.user-info__checkbox-ways:checked + .user-info__radio-name--bike::after {
+  background-image: url("../../img/bike.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+//Foot
+.user-info__checkbox-ways + .user-info__radio-name--foot::before {
+  background-image: url("../../img/foot.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}
+
+.user-info__checkbox-ways:checked + .user-info__radio-name--foot::after {
+  background-image: url("../../img/foot.svg");
+  left: 8px;
+  top: 7px;
+  height: 16px;
+  width: 16px;
+}

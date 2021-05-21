@@ -1,0 +1,51 @@
+.user-nav {
+  background-color: $basic-grey;
+  margin-top: -25px;
+  padding-bottom: 50px;
+}
+
+.user-nav__wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.user-nav__orange {
+  background: $basic-yellow;
+  height: 30px;
+}
+
+.user-nav__picture {
+  margin-left: 38px;
+}
+
+.user-nav__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.user-nav__button {
+  background: $special-grey-800;
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  color: $basic-grey;
+  padding: 10px 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.user-nav__progressbar {
+  display: flex;
+  position: relative;
+}
+
+.user-nav__stroke {
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+  top: 0;
+  left: 0;
+}
