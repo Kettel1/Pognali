@@ -5,21 +5,34 @@
   z-index: 9;
   position: relative;
   margin-top: -25px;
+  padding-bottom: 150px;
 
   @media (min-width: $tablet-width) {
     margin-top: -50px;
     padding-top: 50px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding-bottom: 0;
   }
 }
 
 .filter__header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 60px 0;
+    justify-content: normal;
+  }
 }
 
 .filter__select {
   padding-bottom: 20px;
+  position: relative;
 }
 
 .filter__title {
@@ -42,6 +55,17 @@
     top: 3px;
     left: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0;
+    font-size: 20px;
+  }
+
 }
 
 .filter__list {
@@ -55,6 +79,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: 40px;
   }
 }
 
@@ -63,6 +96,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -152,6 +189,33 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 100px;
+    background-image: url("../../img/icon_close.svg");
+    height: 14px;
+    width: 14px;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &::before {
+      height: 22px;
+      width: 24px;
+      background-size: 24px 22px;
+      left: 220px;
+      top: 36px;
+    }
+  }
 }
 
 .filter__alphabet-list {
@@ -165,17 +229,65 @@
     margin-top: 20px;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 100%;
+  }
 }
 
 .filter__alphabet-item {
   width: 75px;
   height: 85px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 .filter__alphabet-link {
   font-size: 60px;
   font-weight: 700;
-  line-height: .4;
+  line-height: 0.4px;
   opacity: 0.3;
+  color: $basic-blue-200;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.filter__top-button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-blue-200;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: -2px;
+      right: -53px;
+      content: "";
+      background-image: url("../../img/icon_close.svg");
+      height: 24px;
+      width: 21px;
+      background-size: 24px 21px;
+      background-repeat: no-repeat;
+    }
+  }
 }

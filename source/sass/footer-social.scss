@@ -34,6 +34,8 @@
 .footer-social__dev {
   border-top: 1px solid $special-grey-200;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -61,6 +63,7 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 20px;
+    font-size: 20px;
   }
 }
 
