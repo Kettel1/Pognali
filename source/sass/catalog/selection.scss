@@ -2,10 +2,13 @@
   background-color: $basic-grey;
   margin-top: -25px;
   padding-top: 25px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: -50px;
+    padding-top: 50px;
   }
+
 }
 
 .selection__title {
@@ -35,6 +38,12 @@
   padding-right: 25px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    max-width: 285px;
+    position: absolute;
+    right: 60px;
+  }
 }
 
 .selection__button {

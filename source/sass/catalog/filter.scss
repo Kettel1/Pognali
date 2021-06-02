@@ -33,6 +33,11 @@
 .filter__select {
   padding-bottom: 20px;
   position: relative;
+  display: none;
+}
+
+.filter__select--show {
+  display: block;
 }
 
 .filter__title {
@@ -280,12 +285,44 @@
 
     &::before {
       position: absolute;
-      top: -2px;
+      top: -5px;
       right: -53px;
+      content: "";
+      background-image: url("../../img/3-dots.svg");
+      height: 30px;
+      width: 30px;
+      background-size: 30px 30px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.filter__top-button-js {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: $basic-blue-200;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: -2px;
+      right: -43px;
       content: "";
       background-image: url("../../img/icon_close.svg");
       height: 24px;
-      width: 21px;
+      width: 24px;
       background-size: 24px 21px;
       background-repeat: no-repeat;
     }

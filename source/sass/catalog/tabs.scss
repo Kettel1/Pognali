@@ -42,9 +42,7 @@
   padding: 0;
   position: relative;
 
-  &--checkbox {
-    display: flex;
-  }
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -53,11 +51,23 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+
+  &--checkbox {
+    display: flex;
+  }
 }
 
 .tabs__content {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

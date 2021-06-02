@@ -25,6 +25,7 @@ $retina-dppx: 1.5dppx;
   margin: 0 auto;
   padding: 0 25px;
   max-width: 320px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 687px;
