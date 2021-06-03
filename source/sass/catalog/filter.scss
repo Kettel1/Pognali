@@ -5,7 +5,6 @@
   z-index: 9;
   position: relative;
   margin-top: -25px;
-  padding-bottom: 150px;
 
   @media (min-width: $tablet-width) {
     margin-top: -50px;
@@ -31,13 +30,19 @@
 }
 
 .filter__select {
-  padding-bottom: 20px;
   position: relative;
   display: none;
+  height: 670px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    height: auto;
+  }
 }
 
 .filter__select--show {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .filter__title {
@@ -70,22 +75,22 @@
     margin: 0;
     font-size: 20px;
   }
-
 }
 
 .filter__list {
+  display: none;
   list-style: none;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 0;
   margin-left: 25px;
   font-size: 16px;
   line-height: 18px;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     margin-left: 0;
   }
 
@@ -93,6 +98,14 @@
     margin-bottom: 0;
     margin-top: 0;
     margin-left: 40px;
+  }
+
+  &--mobile {
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -147,6 +160,11 @@
   padding: 11px 15px;
   background: white;
   border: 1px solid $special-grey-500;
+  cursor: pointer;
+
+  &--active {
+    background: $basic-blue;
+  }
 }
 
 .filter__letter-link {
@@ -156,6 +174,10 @@
   text-decoration: none;
   color: $basic-blue;
   text-transform: uppercase;
+
+  &--active {
+   color: white;
+  }
 }
 
 .filter__line {
@@ -195,12 +217,13 @@
   padding-bottom: 10px;
   margin-bottom: 25px;
   position: relative;
+  margin-top: auto;
 
   &::before {
     position: absolute;
     content: "";
     top: 12px;
-    left: 100px;
+    left: 70px;
     background-image: url("../../img/icon_close.svg");
     height: 14px;
     width: 14px;
@@ -217,22 +240,34 @@
       height: 22px;
       width: 24px;
       background-size: 24px 22px;
-      left: 220px;
-      top: 36px;
+      left: 250px;
+      top: 38px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      left: 560px;
+      top: 38px;
     }
   }
 }
 
 .filter__alphabet-list {
-  display: none;
+  display: flex;
+  list-style: none;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  border: 1px solid $special-grey-500;
+  padding: 0;
+  max-width: 225px;
+  margin-left: 25px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    list-style: none;
-    padding: 0;
     max-width: 400px;
-    margin-top: 20px;
-    flex-wrap: wrap;
+    border: none;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -241,9 +276,23 @@
 }
 
 .filter__alphabet-item {
-  width: 75px;
-  height: 85px;
+  width: 43px;
+  height: 40px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $special-grey-500;
+  background-color: white;
+
+  @media (min-width: $tablet-width) {
+    width: 75px;
+    height: 85px;
+    background: none;
+    border: none;
+    justify-content: normal;
+    align-items: normal;
+  }
 
   @media (min-width: $desktop-width) {
     width: 255px;
@@ -251,80 +300,104 @@
     height: auto;
     flex-direction: column;
   }
+
+  &--active {
+    background: $basic-blue;
+
+    @media (min-width: $tablet-width) {
+      background: none;
+    }
+  }
 }
 
 .filter__alphabet-link {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 0.4px;
-  opacity: 0.3;
-  color: $basic-blue-200;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: $basic-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    font-weight: 700;
+    opacity: 0.3;
+    color: $basic-blue-200;
+  }
 
   @media (min-width: $desktop-width) {
     opacity: 1;
   }
+
+  &--active {
+    color: white;
+
+    @media (min-width: $tablet-width) {
+      color: $basic-blue;
+      opacity: 1;
+    }
+  }
 }
 
 .filter__top-button {
-  display: none;
+  margin-left: auto;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: none;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-blue-200;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    margin-left: auto;
-    position: absolute;
-    top: 60px;
-    right: 60px;
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $basic-blue-200;
-    cursor: pointer;
+    top: 50px;
+    right: 0;
 
     &::before {
       position: absolute;
-      top: -5px;
-      right: -53px;
-      content: "";
-      background-image: url("../../img/3-dots.svg");
-      height: 30px;
-      width: 30px;
-      background-size: 30px 30px;
-      background-repeat: no-repeat;
+      top: 5px;
+      right: 35px;
+      content: "Показать все";
+      width: 150px;
     }
   }
 }
 
 .filter__top-button-js {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: block;
-    margin-left: auto;
     position: absolute;
-    top: 60px;
-    right: 60px;
-    background: none;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $basic-blue-200;
-    cursor: pointer;
+    top: 50px;
+    right: 0;
 
     &::before {
       position: absolute;
-      top: -2px;
-      right: -43px;
-      content: "";
-      background-image: url("../../img/icon_close.svg");
+      top: 5px;
+      right: 35px;
+      content: "Свернуть";
+      width: 150px;
+    }
+  }
+}
+
+.filter-top-button-icon {
+  width: 17px;
+  height: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 6px;
+  }
+
+  &--close {
+    width: 16px;
+    height: 16px;
+
+    @media (min-width: $tablet-width) {
+      width: 21px;
       height: 24px;
-      width: 24px;
-      background-size: 24px 21px;
-      background-repeat: no-repeat;
     }
   }
 }

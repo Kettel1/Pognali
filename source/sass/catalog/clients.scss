@@ -20,7 +20,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 66%;
+    max-width: 72%;
+    padding: 0;
+    height: 285px;
   }
 }
 
@@ -50,6 +52,15 @@
   display: flex;
   position: relative;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    margin-left: 60px;
+  }
 }
 
 .clients__header {
@@ -59,7 +70,6 @@
 }
 
 .clients__name {
-
   font-weight: bold;
   color: $basic-blue;
   width: 77px;
@@ -72,9 +82,10 @@
     width: auto;
     font-size: 30px;
     line-height: 30px;
-    margin-left: 33px;
     margin-bottom: 20px;
+    margin-left: 0;
   }
+
 }
 
 
@@ -128,6 +139,12 @@
     margin-top: 15px;
     padding-left: 40px;
   }
+
+  &--ways {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
 }
 
 .clients__likes-wrapper {
@@ -137,7 +154,7 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    margin-left: 33px;
+    margin-left: 0;
     margin-top: 27px;
   }
 }
@@ -243,6 +260,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    right: 130px;
+    width: 160px;
+  }
 }
 
 .clients__item {
@@ -260,6 +285,12 @@
   @media (min-width: $tablet-width) {
     & + .clients__item {
       margin-left: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & + .clients__item {
+      margin-left: 0;
     }
   }
 }
@@ -365,6 +396,11 @@
     position: absolute;
     bottom: 110px;
     right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 40px;
+    right: 40px;
   }
 }
 
@@ -492,6 +528,12 @@
     right: 45px;
     flex-direction: column;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 190px;
+    right: 180px;
+    flex-direction: row;
+  }
 }
 
 .clients__item-transport {
@@ -588,6 +630,12 @@
     width: 190px;
     height: 190px;
   }
+
+  @media (min-width: $desktop-width) {
+    border-radius: 20px 0 0 20px;
+    width: 285px;
+    height: 285px;
+  }
 }
 
 .clients__hashtags-list {
@@ -601,7 +649,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    margin-left: 33px;
+    margin-left: 0;
     margin-bottom: 20px;
     margin-top: 0;
     width: 250px;

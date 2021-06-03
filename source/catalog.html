@@ -53,7 +53,7 @@
   <div class="container">
     <h1 class='visually-hidden'>Сервис Погнали!</h1>
     <div class='header__wrapper'>
-      <a class='header__link' href="#">
+      <a class='header__link' href="index.html">
         <picture>
           <source media="(min-width: 1440px)"
                   srcset="img/logo-desktop-white@1x.png 1x, img/logo-desktop-white@2x.png 2x">
@@ -114,70 +114,54 @@
         <h2 class="filter__title">Фильтрация по странам:</h2>
         <ul class='filter__list'>
           <li class='filter__item'>
-            <a href="#" class='filter__link filter__link--active'>
+            <a href="#" class='filter__link filter__link--active' id="europe" onclick="tabs(event)">
               Европа
             </a>
           </li>
           <li class='filter__item'>
-            <a href="#" class='filter__link'>
+            <a href="#" class='filter__link' id="asia" onclick="tabs(event)">
               Азия
             </a>
           </li>
           <li class='filter__item'>
-            <a href="#" class='filter__link'>
+            <a href="#" class='filter__link' id="america" onclick="tabs(event)">
               Америка
             </a>
           </li>
           <li class='filter__item'>
-            <a href="#" class='filter__link'>
+            <a class='filter__link' href="#" id="islands" onclick="tabs(event)">
               Острова
             </a>
           </li>
         </ul>
-        <button class="filter__top-button">Показать все</button>
+        <button class="filter__top-button"><img class="filter-top-button-icon" src="img/3-dots.svg" alt="icon"></button>
       </div>
       <div class="filter__select">
-
-        <table class="filter__alphabet-table">
-          <tr class="filter__line">
-            <td class="filter__letter"><a href="#" class="filter__letter-link">А</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Б</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">В</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Г</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Д</a></td>
-          </tr>
-          <tr class="filter__line">
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Е</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">З</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">И</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">К</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Л</a></td>
-          </tr>
-          <tr class="filter__line">
-            <td class="filter__letter"><a href="#" class="filter__letter-link">М</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Н</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">О</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">П</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Р</a></td>
-          </tr>
-          <tr class="filter__line">
-            <td class="filter__letter"><a href="#" class="filter__letter-link">С</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Т</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">У</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Ф</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Х</a></td>
-          </tr>
-          <tr class="filter__line">
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Ч</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Ш</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Э</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Ю</a></td>
-            <td class="filter__letter"><a href="#" class="filter__letter-link">Я</a></td>
-          </tr>
-        </table>
+        <ul class='filter__list filter__list--mobile'>
+          <li class='filter__item'>
+            <a href="#" class='filter__link filter__link--active' id="europe" onclick="tabs(event)">
+              Европа
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a href="#" class='filter__link' id="asia" onclick="tabs(event)">
+              Азия
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a href="#" class='filter__link' id="america" onclick="tabs(event)">
+              Америка
+            </a>
+          </li>
+          <li class='filter__item'>
+            <a class='filter__link' href="#" id="islands" onclick="tabs(event)">
+              Острова
+            </a>
+          </li>
+        </ul>
         <ul class="filter__alphabet-list">
-          <li class="filter__alphabet-item">
-            <a class="filter__alphabet-link">А</a>
+          <li class="filter__alphabet-item filter__alphabet-item--active">
+            <a class="filter__alphabet-link filter__alphabet-link--active">А</a>
             <ul class="alphabet-name alphabet-name--a">
               <li class="alphabet-name__item">
                 <a href="#" class="alphabet-name__link">
@@ -1222,6 +1206,7 @@
           <div class="clients__info-top">
             <a class="clients__image-link" href="firsova.html">
               <picture>
+                <source media="(min-width: 1440px" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
                 <img class="clients__avatar" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x"
                      alt='avatar' width="70" height="70">
@@ -1322,7 +1307,8 @@
           <div class="clients__info-top">
             <a class="clients__image-link" href="demin.html">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+                <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
                 <img class="clients__avatar" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x"
                      alt='avatar' width="70" height="70">
               </picture>
@@ -1359,7 +1345,7 @@
 
           </div>
           <div class='clients__country'>
-            <p class='clients__title'>
+            <p class='clients__title clients__title--ways'>
               хочет посетить:
             </p>
             <ul class='clients__list'>
@@ -1416,7 +1402,8 @@
           <div class="clients__info-top">
             <a class="clients__image-link" href="smolov.html">
               <picture>
-                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
+                <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
                 <img class="clients__avatar" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x"
                      alt='avatar' width="70" height="70">
               </picture>
@@ -1454,7 +1441,7 @@
 
           </div>
           <div class='clients__country'>
-            <p class='clients__title'>
+            <p class='clients__title clients__title--ways'>
               хочет посетить:
             </p>
             <ul class='clients__list'>
@@ -1513,6 +1500,8 @@
           <div class="clients__info-top">
             <a class="clients__image-link" href="rogovaya.html">
               <picture>
+                <source media="(min-width: 1440px)"
+                        srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
                 <img class="clients__avatar" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x"
                      alt='avatar' width="70" height="70">
@@ -1550,7 +1539,7 @@
           </div>
 
           <div class='clients__country'>
-            <p class='clients__title'>
+            <p class='clients__title clients__title--ways'>
               хочет посетить:
             </p>
             <ul class='clients__list'>
@@ -1643,7 +1632,7 @@
 
         <ul class='footer-social__list'>
           <li class='footer-social__item'>
-            <a class='footer-social__link'>
+            <a href="https://facebook.com" class='footer-social__link'>
               <svg fill="#192144" class="footer-social__link-image footer-social__link-image--facebook"
                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 11 21" xml:space="preserve"
                    width="11" height="21">
@@ -1652,7 +1641,7 @@
             </a>
           </li>
           <li class='footer-social__item'>
-            <a class='footer-social__link'>
+            <a href="https://vk.com/kettel1" class='footer-social__link'>
               <svg fill="#192144" class="footer-social__link-image footer-social__link-image--vkontakte" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 30 15.8" xml:space="preserve"
                    width="23" height="12">
@@ -1661,7 +1650,7 @@
             </a>
           </li>
           <li class='footer-social__item'>
-            <a class='footer-social__link'>
+            <a href="https://instagram.com/kettel31"  class='footer-social__link'>
               <svg fill="#192144" class="footer-social__link-image footer-social__link-image--instagram" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 23 23" xml:space="preserve"
                    width="18" height="18">
@@ -1673,7 +1662,9 @@
 
         <div class='footer-social__dev'>
           <p class='footer-social__text'>Разработано</p>
-          <img src="img/htmlacademy.svg" height="40" width="34">
+          <a href="https://htmlacademy.ru">
+            <img src="img/htmlacademy.svg" height="40" width="34">
+          </a>
         </div>
 
       </div>

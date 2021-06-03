@@ -145,6 +145,7 @@
   &--france {
     &::before {
       background: url("../img/france.png") no-repeat;
+      background-size: 35px 25px;
 
       @media (min-width: $tablet-width) {
         background: url("../img/france-tablet.svg") no-repeat;
@@ -158,6 +159,7 @@
   &--czech {
     &::before {
       background: url("../img/czech.png");
+      background-size: 35px 25px;
 
       @media (min-width: $tablet-width) {
         background: url("../img/czech-tablet.svg") no-repeat;

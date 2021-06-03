@@ -2,9 +2,15 @@
   padding: 0;
   list-style: none;
   position: absolute;
-  top: -20px;
-  left: 530px;
-  min-width: 160px;
+  left: 0;
+  top: 230px;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    top: -20px;
+    left: 530px;
+    min-width: 160px;
+  }
 
   @media (min-width: $desktop-width) {
     display: block;
@@ -14,7 +20,6 @@
   }
 
   &--a {
-    display: none;
     @media (min-width: $tablet-width) {
       display: block;
     }
@@ -219,14 +224,17 @@
       display: block;
     }
   }
-
-
 }
 
 .alphabet-name__link {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   text-decoration: none;
   color: black;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
