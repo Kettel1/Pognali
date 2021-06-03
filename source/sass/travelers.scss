@@ -1,5 +1,4 @@
 .travelers {
-
   background-color: $basic-blue-200;
   position: relative;
   z-index: 8;
@@ -108,8 +107,6 @@
   @media (min-width: $tablet-width) {
     padding-right: 250px;
   }
-
-
 }
 
 .travelers__sub-description {

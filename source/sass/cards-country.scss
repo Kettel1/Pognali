@@ -17,8 +17,8 @@
     width: 100%;
     flex-direction: row-reverse;
   }
-  @media (min-width: $desktop-width) {
 
+  @media (min-width: $desktop-width) {
     &:last-child {
       &::after {
         content: "";
@@ -27,7 +27,9 @@
         z-index: 2;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to bottom, rgba(237, 239, 246, 0) 0%,
+        background: linear-gradient (
+          to bottom,
+          rgba(237, 239, 246, 0) 0%,
           rgba(237, 239, 246, 0) 50%, #edeff6 100%);
       }
     }
@@ -143,6 +145,7 @@
   &--france {
     &::before {
       background: url("../img/france.png") no-repeat;
+      background-size: 35px 25px;
 
       @media (min-width: $tablet-width) {
         background: url("../img/france-tablet.svg") no-repeat;
@@ -156,6 +159,7 @@
   &--czech {
     &::before {
       background: url("../img/czech.png");
+      background-size: 35px 25px;
 
       @media (min-width: $tablet-width) {
         background: url("../img/czech-tablet.svg") no-repeat;

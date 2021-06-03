@@ -2,6 +2,13 @@
   background-color: $basic-grey;
   margin-top: -25px;
   padding-top: 25px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -50px;
+    padding-top: 50px;
+  }
+
 }
 
 .selection__title {
@@ -10,6 +17,16 @@
   font-weight: bold;
   color: $basic-blue;
   width: 145px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    border-bottom: 1px solid $basic-yellow-100;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    padding: 38px 0
+
+  }
 }
 
 .selection__wrapper {
@@ -21,11 +38,18 @@
   padding-right: 25px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    max-width: 285px;
+    position: absolute;
+    right: 60px;
+    z-index: 1;
+  }
 }
 
 .selection__button {
   background-color: white;
-  color: $basic-grey;
+  color: $basic-blue-100;
   margin-bottom: 25px;
   margin-top: 25px;
 }

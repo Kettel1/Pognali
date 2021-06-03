@@ -2,16 +2,239 @@
   padding: 0;
   list-style: none;
   position: absolute;
-  top: -20px;
-  left: 430px;
+  left: 0;
+  top: 230px;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    top: -20px;
+    left: 530px;
+    min-width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: static;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  &--a {
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--b {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--v {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--g {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--d {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--e {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--z {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--i {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--k {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--l {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--m {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--n {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--o {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--p {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--r {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--s {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--t {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--u {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--ph {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--y {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--x {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--ch {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--sh {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--ee {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--u {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &--i {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
-
-
 .alphabet-name__link {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
   text-decoration: none;
   color: black;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

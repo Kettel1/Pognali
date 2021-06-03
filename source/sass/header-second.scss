@@ -43,7 +43,7 @@
     background-color: $special-orange;
 
     @media (min-width: $tablet-width) {
-      bottom: -63px;
+      bottom: -72px;
     }
   }
 
@@ -67,15 +67,15 @@
     position: relative;
     padding-right: 45px;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 50%;
-      right: 0px;
+      right: 0;
       width: 32px;
       height: 16px;
       margin-top: -11px;
-      background-image: url(../img/return.svg);
+      background-image: url("../img/return.svg");
       background-repeat: no-repeat;
     }
   }
