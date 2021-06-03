@@ -208,22 +208,6 @@
       display: block;
     }
   }
-
-  &--u {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
-
-  &--i {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: block;
-    }
-  }
 }
 
 .alphabet-name__link {
